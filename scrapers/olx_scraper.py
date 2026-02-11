@@ -1,223 +1,140 @@
-"""
-Scraper para OLX
-"""
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.firefox.options import Options
+from selenium.webdriver.firefox.service import Service
+from webdriver_manager.firefox import GeckoDriverManager
+import pandas as pd
+import time
 
-import re
-from typing import List, Dict, Any
-from bs4 import BeautifulSoup
-from base_scraper import BaseScraper
-from utils.helpers import limpar_preco, limpar_area, extrair_numero, logger
-
-
-class OLXScraper(BaseScraper):
+def scrape_olx_selenium(url):
     """
-    Scraper específico para OLX
+    Scrape OLX using Selenium to handle JavaScript rendering
+
+    Args:
+        url: The OLX URL to scrape
     """
-    
-    def get_fonte_nome(self) -> str:
-        return "olx"
-    
-    def construir_url(self, tipo_imovel: str, tipo_transacao: str, pagina: int = 1) -> str:
-        """
-        Constrói URL da OLX
-        
-        Exemplo: https://sp.olx.com.br/araraquara-e-regiao/araraquara/imoveis
-        """
-        base = "https://sp.olx.com.br"
-        
-        # OLX não separa bem por tipo de transação nas categorias
-        # Geralmente usa filtros
-        
-        # Normalizar tipo de imóvel
-        imovel_map = {
-            'apartamento': 'apartamentos',
-            'casa': 'casas',
-            'terreno': 'terrenos-sitios-e-fazendas',
-            'comercial': 'comercial'
-        }
-        categoria = imovel_map.get(tipo_imovel.lower(), 'imoveis')
-        
-        # Construir URL
-        cidade_formatada = self.cidade.lower().replace(' ', '-')
-        
-        url = f"{base}/araraquara-e-regiao/{cidade_formatada}/{categoria}"
-        
-        if pagina > 1:
-            url += f"?o={pagina}"
-        
-        # Adicionar filtro de transação se for aluguel
-        if tipo_transacao.lower() == 'aluguel':
-            separador = '&' if '?' in url else '?'
-            url += f"{separador}sf=1"  # sf=1 é filtro de aluguel
-        
-        return url
-    
-    def extrair_dados_pagina(self, soup: BeautifulSoup, url: str) -> List[Dict[str, Any]]:
-        """
-        Extrai dados dos anúncios da OLX
-        """
-        imoveis = []
-        
-        # OLX usa estrutura diferente - ajustar seletores
-        anuncios = soup.find_all('li', {'data-ds-component': 'DS-AdCard'})
-        
-        if not anuncios:
-            # Tentar seletor alternativo
-            anuncios = soup.find_all('a', {'class': re.compile(r'.*olx-ad-card.*')})
-        
-        logger.info(f"Encontrados {len(anuncios)} anúncios na página")
-        
-        for anuncio in anuncios:
+
+    # Configure Firefox options
+    firefox_options = Options()
+    # Uncomment below to run in headless mode (no GUI)
+    firefox_options.add_argument("--headless")
+
+    # Setup Firefox driver
+    service = Service(GeckoDriverManager().install())
+    driver = webdriver.Firefox(service=service, options=firefox_options)
+
+    try:
+        print(f"Opening URL: {url}")
+        driver.get(url)
+
+        # Wait for page to load - adjust wait time if needed
+        print("Waiting for page to load...")
+        time.sleep(5)  # Wait for JavaScript to render
+
+        # Try multiple selectors for finding ads
+        ads = None
+        selectors = [
+            (By.CLASS_NAME, "olxad-list__item"),
+            (By.XPATH, "//div[contains(@class, 'ListingItem')]"),
+            (By.XPATH, "//div[@data-testid='listing-item']"),
+            (By.CSS_SELECTOR, "[data-testid*='listing']"),
+            (By.CLASS_NAME, "sc-1fcmb83-0"),  # Common OLX class
+        ]
+
+        for selector_type, selector_value in selectors:
             try:
-                imovel = self._extrair_dados_anuncio(anuncio)
-                if imovel:
-                    imoveis.append(imovel)
-            except Exception as e:
-                logger.warning(f"Erro ao extrair anúncio: {e}")
+                ads = driver.find_elements(selector_type, selector_value)
+                if ads and len(ads) > 0:
+                    print(f"Found {len(ads)} ads using selector: {selector_type} = {selector_value}")
+                    break
+            except:
                 continue
-        
-        return imoveis
-    
-    def _extrair_dados_anuncio(self, anuncio) -> Dict[str, Any]:
-        """
-        Extrai dados de um anúncio específico
-        """
-        dados = {}
-        
-        try:
-            # Título
-            titulo_elem = anuncio.find('h2')
-            if not titulo_elem:
-                titulo_elem = anuncio.find('span', {'class': re.compile(r'.*title.*')})
-            if titulo_elem:
-                dados['titulo'] = titulo_elem.get_text(strip=True)
-            
-            # Preço
-            preco_elem = anuncio.find('span', {'class': re.compile(r'.*price.*')})
-            if not preco_elem:
-                preco_elem = anuncio.find('h3', {'class': re.compile(r'.*price.*')})
-            if preco_elem:
-                preco_text = preco_elem.get_text(strip=True)
-                if 'grátis' not in preco_text.lower():
-                    dados['preco'] = limpar_preco(preco_text)
-            
-            # Localização
-            loc_elem = anuncio.find('span', {'class': re.compile(r'.*location.*')})
-            if loc_elem:
-                localizacao = loc_elem.get_text(strip=True)
-                dados['endereco'] = localizacao
-                
-                # Tentar extrair bairro (geralmente vem antes da cidade)
-                if ',' in localizacao:
-                    partes = [p.strip() for p in localizacao.split(',')]
-                    dados['bairro'] = partes[0] if partes else None
-            
-            # URL do anúncio
-            if anuncio.name == 'a' and anuncio.get('href'):
-                href = anuncio['href']
-                if href.startswith('http'):
-                    dados['url'] = href
-                else:
-                    dados['url'] = f"https://sp.olx.com.br{href}"
-            else:
-                link = anuncio.find('a', href=True)
-                if link:
-                    href = link['href']
-                    if href.startswith('http'):
-                        dados['url'] = href
-                    else:
-                        dados['url'] = f"https://sp.olx.com.br{href}"
-            
-            # Descrição curta (se disponível)
-            desc_elem = anuncio.find('p', {'class': re.compile(r'.*description.*')})
-            if desc_elem:
-                dados['descricao'] = desc_elem.get_text(strip=True)[:500]
-            
-            # Características (tentar extrair da descrição ou título)
-            texto_completo = (dados.get('titulo', '') + ' ' + dados.get('descricao', '')).lower()
-            
-            # Área
-            match_area = re.search(r'(\d+)\s*m[²2]', texto_completo)
-            if match_area:
-                dados['area'] = float(match_area.group(1))
-            
-            # Quartos
-            match_quartos = re.search(r'(\d+)\s*quarto', texto_completo)
-            if match_quartos:
-                dados['quartos'] = int(match_quartos.group(1))
-            
-            # Banheiros
-            match_banheiros = re.search(r'(\d+)\s*banheiro', texto_completo)
-            if match_banheiros:
-                dados['banheiros'] = int(match_banheiros.group(1))
-            
-            # Vagas
-            match_vagas = re.search(r'(\d+)\s*vaga', texto_completo)
-            if match_vagas:
-                dados['vagas'] = int(match_vagas.group(1))
-            
-            # Inferir tipo de imóvel
-            if 'titulo' in dados:
-                dados['tipo_imovel'] = self._inferir_tipo_imovel(dados['titulo'])
-            
-            return dados if dados.get('preco') else None
-            
-        except Exception as e:
-            logger.warning(f"Erro ao extrair dados do anúncio: {e}")
-            return None
-    
-    def _inferir_tipo_imovel(self, texto: str) -> str:
-        """
-        Infere tipo de imóvel a partir do texto
-        """
-        texto_lower = texto.lower()
-        
-        if 'apartamento' in texto_lower or 'apto' in texto_lower or 'ap ' in texto_lower:
-            return 'apartamento'
-        elif 'casa' in texto_lower:
-            if 'condominio' in texto_lower or 'condomínio' in texto_lower:
-                return 'casa_condominio'
-            return 'casa'
-        elif 'terreno' in texto_lower or 'lote' in texto_lower or 'área' in texto_lower:
-            return 'terreno'
-        elif any(x in texto_lower for x in ['comercial', 'sala', 'loja', 'ponto comercial', 'galpão']):
-            return 'comercial'
-        elif any(x in texto_lower for x in ['sítio', 'fazenda', 'chácara', 'rural']):
-            return 'rural'
-        
-        return 'outro'
 
+        # Optional: Additional wait for dynamic content
+        time.sleep(2)
 
-def main():
-    """
-    Função principal para teste
-    """
-    import argparse
-    
-    parser = argparse.ArgumentParser(description='Scraper OLX')
-    parser.add_argument('--cidade', default='Araraquara', help='Cidade para busca')
-    parser.add_argument('--tipo-imovel', default='apartamento', help='Tipo de imóvel')
-    parser.add_argument('--tipo-transacao', default='venda', help='venda ou aluguel')
-    parser.add_argument('--max-paginas', type=int, default=5, help='Máximo de páginas')
-    
-    args = parser.parse_args()
-    
-    scraper = OLXScraper(cidade=args.cidade)
-    scraper.coletar(
-        tipo_imovel=args.tipo_imovel,
-        tipo_transacao=args.tipo_transacao,
-        max_paginas=args.max_paginas
-    )
-    
-    # Salvar dados
-    scraper.salvar_dados(formato='csv')
-    
-    # Exibir resumo
-    resumo = scraper.get_resumo()
-    print("\n=== RESUMO DA COLETA ===")
-    for chave, valor in resumo.items():
-        print(f"{chave}: {valor}")
+        # Debug: Save page source to file
+        print("Saving page source for debugging...")
+        with open("page_debug.html", "w", encoding="utf-8") as f:
+            f.write(driver.page_source)
 
+        # Get all ads
+        print(f"Found {len(ads)} ads")
+
+        # Get all links first
+        links = driver.find_elements(By.CSS_SELECTOR, "a.olx-adcard__link")
+        print(f"Found {len(links)} property links")
+
+        # Get all h3 elements containing prices
+        prices = driver.find_elements(By.CSS_SELECTOR, "h3.typo-body-large")
+        print(f"Found {len(prices)} price elements")
+
+        # Get all location elements
+        locations = driver.find_elements(By.CSS_SELECTOR, ".typo-caption.olx-adcard__location")
+        print(f"Found {len(locations)} location elements")
+
+        # Extract data from each ad
+        properties = []
+        min_count = min(len(prices), len(locations), len(links))
+        print(f"Extracting data from {min_count} ads\n")
+
+        for i in range(min_count):
+            try:
+                price = prices[i*2].text if i*2 < len(prices) else prices[i].text if i < len(prices) else "Price not found"
+                location = locations[i].text if i < len(locations) else "Location not found"
+                link = links[i].get_attribute("href") if i < len(links) else "Link not found"
+
+                # Extract title from link text or aria-label
+                title = links[i].text.strip() if (i < len(links) and links[i].text) else (links[i].get_attribute("aria-label") if i < len(links) else "Title not found")
+                if not title:
+                    title = f"Property {i+1}"
+
+                property_info = {
+                    'title': title,
+                    'price': price,
+                    'location': location,
+                    'link': link
+                }
+                properties.append(property_info)
+
+                print(f"{i+1}. {title[:100]}")
+                print(f"   Price: {price}")
+                print(f"   Location: {location}")
+                print(f"   Link: {link[:300] if len(link) > 10 else link}\n")     
+            except Exception as e:
+                print(f"Error extracting ad {i+1}: {str(e)[:100]}\n")
+
+        return properties
+
+    except Exception as e:
+        print(f"Error: {e}")
+        return None
+
+    finally:
+        print("\nClosing browser...")
+        driver.quit()
 
 if __name__ == "__main__":
-    main()
+    # Inicializa lista para armazenar todas as propriedades
+    all_properties = []
+    
+    for i in range(1, 3):  # Scrape first 2 pages as an example
+        url = f"https://www.olx.com.br/imoveis/venda/estado-sp/regiao-de-ribeirao-preto/araraquara?o={i}"
+        print(f"\nScraping page {i}...\n")
+
+        properties = scrape_olx_selenium(url)
+        
+        # Adiciona propriedades da página à lista geral
+        if properties:
+            all_properties.extend(properties)
+
+    # Salva todas as propriedades no CSV após o loop
+    if all_properties:
+        df_final = pd.DataFrame(all_properties)
+        df_final.to_csv('olx_properties.csv', index=False)
+        print(f"\n\nTotal properties found: {len(all_properties)}")
+        print("Properties saved to 'olx_properties.csv'")
+    else:
+        print("No properties found.")
