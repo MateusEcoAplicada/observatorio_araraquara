@@ -14,7 +14,6 @@ Este projeto coleta, trata e analisa dados de anúncios imobiliários em Araraqu
 ## 🛠️ Tecnologias
 
 - **Python 3.8+**
-- **Scrapers**: BeautifulSoup4, Selenium, Requests
 - **Dados**: Pandas, NumPy
 - **Visualização**: Matplotlib, Seaborn, Plotly
 - **Geoespacial**: GeoPandas, Folium
@@ -24,7 +23,6 @@ Este projeto coleta, trata e analisa dados de anúncios imobiliários em Araraqu
 
 ```
 observatorio_araraquara/
-├── scrapers/          # Scripts de coleta de dados
 ├── data/             # Dados coletados (raw e processados)
 ├── analysis/         # Scripts de análise
 ├── notebooks/        # Jupyter notebooks exploratórios
@@ -47,23 +45,13 @@ cp .env.example .env
 
 ## 💻 Uso
 
-### 1. Coletar dados
-
-```bash
-# Scraping de todos os sites
-python scrapers/run_all.py
-
-# Scraping de site específico
-python scrapers/vivareal_scraper.py --cidade araraquara
-```
-
-### 2. Processar dados
+### 1. Processar dados
 
 ```bash
 python utils/data_cleaner.py
 ```
 
-### 3. Análise
+### 2. Análise
 
 ```bash
 # Executar análise completa

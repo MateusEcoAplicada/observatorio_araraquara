@@ -13,18 +13,10 @@ O artigo destaca que:
 - A diferença entre imóveis mais caros e mais baratos está aumentando
 - A habitação está sendo tratada como ativo financeiro, não como direito
 
-### Nossa Solução
-
-Um sistema de **web scraping** para:
-1. Coletar dados de anúncios imobiliários em Araraquara
-2. Processar e limpar esses dados
-3. Analisar tendências de mercado
-4. Apoiar políticas públicas baseadas em evidências
-
 ## 🎯 Objetivos do Projeto
 
 ### Objetivos Primários
-- Monitorar evolução de preços imobiliários em Araraquara
+
 - Identificar desigualdades intraurbanas (amplitude de preços)
 - Mapear expansão territorial urbana
 - Analisar tipos de imóveis mais ofertados
