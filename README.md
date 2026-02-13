@@ -5,7 +5,7 @@ Projeto de web scraping e análise de dados do mercado imobiliário de Araraquar
 ## 📋 Descrição
 
 Este projeto coleta, trata e analisa dados de anúncios imobiliários em Araraquara para:
-- Monitorar preços de imóveis (venda e aluguel)
+- Monitorar preços de imóveis (venda)
 - Identificar tendências de mercado
 - Mapear expansão territorial urbana
 - Analisar desigualdades intraurbanas
