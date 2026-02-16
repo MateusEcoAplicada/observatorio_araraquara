@@ -1,0 +1,3032 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_eea923f53641a33353c865cd53cfbf61 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_eea923f53641a33353c865cd53cfbf61" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_eea923f53641a33353c865cd53cfbf61 = L.map(
+                "map_eea923f53641a33353c865cd53cfbf61",
+                {
+                    center: [-21.7844, -48.1756],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_05a441f9f7a3dfbaa77764ca66f2f899 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_05a441f9f7a3dfbaa77764ca66f2f899.addTo(map_eea923f53641a33353c865cd53cfbf61);
+    
+            var circle_marker_ae4093f9380d59f0a58b3d098355edc3 = L.circleMarker(
+                [-21.7795, -48.1985],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_60e013595f2e03c3ad68ec29300604b3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f872b50d12e7b6b758348321d18e2df3 = $(`<div id="html_f872b50d12e7b6b758348321d18e2df3" style="width: 100.0%; height: 100.0%;"><b>Altos do Jaraguá</b><br>Media: R$ 174,613.40</div>`)[0];
+                popup_60e013595f2e03c3ad68ec29300604b3.setContent(html_f872b50d12e7b6b758348321d18e2df3);
+            
+        
+
+        circle_marker_ae4093f9380d59f0a58b3d098355edc3.bindPopup(popup_60e013595f2e03c3ad68ec29300604b3)
+        ;
+
+        
+    
+    
+            var circle_marker_1fcafc32964e5b3c2cc3db865ba0a580 = L.circleMarker(
+                [-21.7844, -48.1756],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_e9a19c350323fcd101debd06b68da141 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_05fe924829080b4ee16f12681ee01bfd = $(`<div id="html_05fe924829080b4ee16f12681ee01bfd" style="width: 100.0%; height: 100.0%;"><b>Centro</b><br>Media: R$ 450,726.70</div>`)[0];
+                popup_e9a19c350323fcd101debd06b68da141.setContent(html_05fe924829080b4ee16f12681ee01bfd);
+            
+        
+
+        circle_marker_1fcafc32964e5b3c2cc3db865ba0a580.bindPopup(popup_e9a19c350323fcd101debd06b68da141)
+        ;
+
+        
+    
+    
+            var circle_marker_6094594b93f0084450fee1e5261e0131 = L.circleMarker(
+                [-21.7266, -48.1821],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_ff7354d86c503ee7339f5d952bbdc283 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a0366bc76266a491dcedf46359404332 = $(`<div id="html_a0366bc76266a491dcedf46359404332" style="width: 100.0%; height: 100.0%;"><b>Chácara Flora Araraquara</b><br>Media: R$ 341,000.00</div>`)[0];
+                popup_ff7354d86c503ee7339f5d952bbdc283.setContent(html_a0366bc76266a491dcedf46359404332);
+            
+        
+
+        circle_marker_6094594b93f0084450fee1e5261e0131.bindPopup(popup_ff7354d86c503ee7339f5d952bbdc283)
+        ;
+
+        
+    
+    
+            var circle_marker_02af3996969a354cd344229c9572a9c5 = L.circleMarker(
+                [-21.7472, -48.1878],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_e9c8f23499a7bf9667e6362b68ef3a8f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_15488e325f1512c56c5e4da1d1a97b08 = $(`<div id="html_15488e325f1512c56c5e4da1d1a97b08" style="width: 100.0%; height: 100.0%;"><b>Cidade Jardim</b><br>Media: R$ 334,756.00</div>`)[0];
+                popup_e9c8f23499a7bf9667e6362b68ef3a8f.setContent(html_15488e325f1512c56c5e4da1d1a97b08);
+            
+        
+
+        circle_marker_02af3996969a354cd344229c9572a9c5.bindPopup(popup_e9c8f23499a7bf9667e6362b68ef3a8f)
+        ;
+
+        
+    
+    
+            var circle_marker_e0a3a3dc024c8a4eacd8a9a3f3b96777 = L.circleMarker(
+                [-21.782, -48.168],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_de6013fdad6ccb795d826f0e178b2e8c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d4545796d5881014a0e5941341c6463d = $(`<div id="html_d4545796d5881014a0e5941341c6463d" style="width: 100.0%; height: 100.0%;"><b>Doutor Tancredo de Almeida Neves</b><br>Media: R$ 212,347.06</div>`)[0];
+                popup_de6013fdad6ccb795d826f0e178b2e8c.setContent(html_d4545796d5881014a0e5941341c6463d);
+            
+        
+
+        circle_marker_e0a3a3dc024c8a4eacd8a9a3f3b96777.bindPopup(popup_de6013fdad6ccb795d826f0e178b2e8c)
+        ;
+
+        
+    
+    
+            var circle_marker_ffb594feb1ef6356d9c8f05f491cec44 = L.circleMarker(
+                [-21.788, -48.192],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_71208c2f9318eb8fa2e74f3d89ffe834 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bf05d1757a3cba9e88d636e3e998810c = $(`<div id="html_bf05d1757a3cba9e88d636e3e998810c" style="width: 100.0%; height: 100.0%;"><b>Estrela e Kanashiro</b><br>Media: R$ 311,333.33</div>`)[0];
+                popup_71208c2f9318eb8fa2e74f3d89ffe834.setContent(html_bf05d1757a3cba9e88d636e3e998810c);
+            
+        
+
+        circle_marker_ffb594feb1ef6356d9c8f05f491cec44.bindPopup(popup_71208c2f9318eb8fa2e74f3d89ffe834)
+        ;
+
+        
+    
+    
+            var circle_marker_8bdbec7f304d668974971f9bf19083d3 = L.circleMarker(
+                [-21.7587, -48.1558],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_3d72d5e2f132ee7be109823fe7968988 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_912d3e21aada963004b79b4d0cd3716e = $(`<div id="html_912d3e21aada963004b79b4d0cd3716e" style="width: 100.0%; height: 100.0%;"><b>Jardim Aclimação</b><br>Media: R$ 424,000.00</div>`)[0];
+                popup_3d72d5e2f132ee7be109823fe7968988.setContent(html_912d3e21aada963004b79b4d0cd3716e);
+            
+        
+
+        circle_marker_8bdbec7f304d668974971f9bf19083d3.bindPopup(popup_3d72d5e2f132ee7be109823fe7968988)
+        ;
+
+        
+    
+    
+            var circle_marker_4bb31174811c3832a1e149bc36c3138d = L.circleMarker(
+                [-21.785, -48.145],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_b08a8683f2144c47a3d11972a5631d48 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f280e5e36a39551e8c8cf49589d5c798 = $(`<div id="html_f280e5e36a39551e8c8cf49589d5c798" style="width: 100.0%; height: 100.0%;"><b>Jardim Adalberto Frederico de Oliveira Roxo I</b><br>Media: R$ 331,250.00</div>`)[0];
+                popup_b08a8683f2144c47a3d11972a5631d48.setContent(html_f280e5e36a39551e8c8cf49589d5c798);
+            
+        
+
+        circle_marker_4bb31174811c3832a1e149bc36c3138d.bindPopup(popup_b08a8683f2144c47a3d11972a5631d48)
+        ;
+
+        
+    
+    
+            var circle_marker_479446d1ed413a763f7ca9aa1405b1b3 = L.circleMarker(
+                [-21.7591, -48.1618],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_7dc281fb469aece19f9fddf31b9ec1ef = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e4f790748834ec7f80d0fa7bf51ae70a = $(`<div id="html_e4f790748834ec7f80d0fa7bf51ae70a" style="width: 100.0%; height: 100.0%;"><b>Jardim Adalgisa</b><br>Media: R$ 365,000.00</div>`)[0];
+                popup_7dc281fb469aece19f9fddf31b9ec1ef.setContent(html_e4f790748834ec7f80d0fa7bf51ae70a);
+            
+        
+
+        circle_marker_479446d1ed413a763f7ca9aa1405b1b3.bindPopup(popup_7dc281fb469aece19f9fddf31b9ec1ef)
+        ;
+
+        
+    
+    
+            var circle_marker_f181d9e129c6faab3f7f7a257870d182 = L.circleMarker(
+                [-21.775, -48.158],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_17e61dac1a3d237fbc400fabff0a7ed1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9b4be0401d4f68d770ad32f9867be513 = $(`<div id="html_9b4be0401d4f68d770ad32f9867be513" style="width: 100.0%; height: 100.0%;"><b>Jardim Almeida</b><br>Media: R$ 507,500.00</div>`)[0];
+                popup_17e61dac1a3d237fbc400fabff0a7ed1.setContent(html_9b4be0401d4f68d770ad32f9867be513);
+            
+        
+
+        circle_marker_f181d9e129c6faab3f7f7a257870d182.bindPopup(popup_17e61dac1a3d237fbc400fabff0a7ed1)
+        ;
+
+        
+    
+    
+            var circle_marker_17fc6b0688797e7d0fcb738cdf1ed551 = L.circleMarker(
+                [-21.792, -48.148],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_55519be3785a9e6229e18f48c6983d01 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d2dd8a1c7dda46ad1882508debc58eba = $(`<div id="html_d2dd8a1c7dda46ad1882508debc58eba" style="width: 100.0%; height: 100.0%;"><b>Jardim Altos do Cecap I e II</b><br>Media: R$ 385,000.00</div>`)[0];
+                popup_55519be3785a9e6229e18f48c6983d01.setContent(html_d2dd8a1c7dda46ad1882508debc58eba);
+            
+        
+
+        circle_marker_17fc6b0688797e7d0fcb738cdf1ed551.bindPopup(popup_55519be3785a9e6229e18f48c6983d01)
+        ;
+
+        
+    
+    
+            var circle_marker_3764622098a23f5ffd818849aecccc4d = L.circleMarker(
+                [-21.775, -48.17],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_3abd23c63fc73daa4b836a5712b27512 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8ab9ef712caf195117f72b275540488e = $(`<div id="html_8ab9ef712caf195117f72b275540488e" style="width: 100.0%; height: 100.0%;"><b>Jardim América (Vila Xavier)</b><br>Media: R$ 162,606.05</div>`)[0];
+                popup_3abd23c63fc73daa4b836a5712b27512.setContent(html_8ab9ef712caf195117f72b275540488e);
+            
+        
+
+        circle_marker_3764622098a23f5ffd818849aecccc4d.bindPopup(popup_3abd23c63fc73daa4b836a5712b27512)
+        ;
+
+        
+    
+    
+            var circle_marker_6ff292e9a768a7e93f3849c580482fb1 = L.circleMarker(
+                [-21.777, -48.169],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_c5b59d4f8e1bb8a704ec8b690c93a4af = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f71754d13ed36c10062f19ca5dea6227 = $(`<div id="html_f71754d13ed36c10062f19ca5dea6227" style="width: 100.0%; height: 100.0%;"><b>Jardim Ana Adelaide</b><br>Media: R$ 350,000.00</div>`)[0];
+                popup_c5b59d4f8e1bb8a704ec8b690c93a4af.setContent(html_f71754d13ed36c10062f19ca5dea6227);
+            
+        
+
+        circle_marker_6ff292e9a768a7e93f3849c580482fb1.bindPopup(popup_c5b59d4f8e1bb8a704ec8b690c93a4af)
+        ;
+
+        
+    
+    
+            var circle_marker_36dc21cbe8a40658e20563d9f8432b65 = L.circleMarker(
+                [-21.795, -48.185],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_d608ebf3ae55c6415c3a4c73cdaf78a3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3585174e216c5a8b18957eafa3083bf3 = $(`<div id="html_3585174e216c5a8b18957eafa3083bf3" style="width: 100.0%; height: 100.0%;"><b>Jardim Arangá</b><br>Media: R$ 470,000.00</div>`)[0];
+                popup_d608ebf3ae55c6415c3a4c73cdaf78a3.setContent(html_3585174e216c5a8b18957eafa3083bf3);
+            
+        
+
+        circle_marker_36dc21cbe8a40658e20563d9f8432b65.bindPopup(popup_d608ebf3ae55c6415c3a4c73cdaf78a3)
+        ;
+
+        
+    
+    
+            var circle_marker_ba2c351e8616f6bc8b43742cd3ad4e2d = L.circleMarker(
+                [-21.775, -48.2051],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_187cab82ed362c3755c8913cfd6a03e2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2f990b6d33e99cebeb350be11436a1e6 = $(`<div id="html_2f990b6d33e99cebeb350be11436a1e6" style="width: 100.0%; height: 100.0%;"><b>Jardim Araraquara</b><br>Media: R$ 310,000.00</div>`)[0];
+                popup_187cab82ed362c3755c8913cfd6a03e2.setContent(html_2f990b6d33e99cebeb350be11436a1e6);
+            
+        
+
+        circle_marker_ba2c351e8616f6bc8b43742cd3ad4e2d.bindPopup(popup_187cab82ed362c3755c8913cfd6a03e2)
+        ;
+
+        
+    
+    
+            var circle_marker_3be5bb5dc6ac6a2777bf198b8b5bd133 = L.circleMarker(
+                [-21.7805, -48.2243],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_bd95583b39348d5512e14167f126544a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_492a30f6fbc4ecb4128378a0e98d8fe7 = $(`<div id="html_492a30f6fbc4ecb4128378a0e98d8fe7" style="width: 100.0%; height: 100.0%;"><b>Jardim Bandeirantes</b><br>Media: R$ 280,893.75</div>`)[0];
+                popup_bd95583b39348d5512e14167f126544a.setContent(html_492a30f6fbc4ecb4128378a0e98d8fe7);
+            
+        
+
+        circle_marker_3be5bb5dc6ac6a2777bf198b8b5bd133.bindPopup(popup_bd95583b39348d5512e14167f126544a)
+        ;
+
+        
+    
+    
+            var circle_marker_43b0a5749dd5ac1064408544b8358060 = L.circleMarker(
+                [-21.788, -48.178],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_75c41ab62dd94ffdce00b32c784bc8a7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_75cf2e5e0f414c0f0f45eb1671b7f152 = $(`<div id="html_75cf2e5e0f414c0f0f45eb1671b7f152" style="width: 100.0%; height: 100.0%;"><b>Jardim Boa Vista</b><br>Media: R$ 370,000.00</div>`)[0];
+                popup_75c41ab62dd94ffdce00b32c784bc8a7.setContent(html_75cf2e5e0f414c0f0f45eb1671b7f152);
+            
+        
+
+        circle_marker_43b0a5749dd5ac1064408544b8358060.bindPopup(popup_75c41ab62dd94ffdce00b32c784bc8a7)
+        ;
+
+        
+    
+    
+            var circle_marker_d1ee1d8b5a445e6e912399e60a3e9eb4 = L.circleMarker(
+                [-21.7573, -48.1817],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_271e966b22226854192784432971fc0c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_912d7dcbaa9005a241bdbc615e87832e = $(`<div id="html_912d7dcbaa9005a241bdbc615e87832e" style="width: 100.0%; height: 100.0%;"><b>Jardim Botânico</b><br>Media: R$ 272,500.00</div>`)[0];
+                popup_271e966b22226854192784432971fc0c.setContent(html_912d7dcbaa9005a241bdbc615e87832e);
+            
+        
+
+        circle_marker_d1ee1d8b5a445e6e912399e60a3e9eb4.bindPopup(popup_271e966b22226854192784432971fc0c)
+        ;
+
+        
+    
+    
+            var circle_marker_e2381125ce695e8f301f9fb40f9f96b4 = L.circleMarker(
+                [-21.7544, -48.1654],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_162cbfa370d11345373adc46582575e6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c9a19f98901218d53a2156f6cda00d0d = $(`<div id="html_c9a19f98901218d53a2156f6cda00d0d" style="width: 100.0%; height: 100.0%;"><b>Jardim Bounganville</b><br>Media: R$ 343,333.33</div>`)[0];
+                popup_162cbfa370d11345373adc46582575e6.setContent(html_c9a19f98901218d53a2156f6cda00d0d);
+            
+        
+
+        circle_marker_e2381125ce695e8f301f9fb40f9f96b4.bindPopup(popup_162cbfa370d11345373adc46582575e6)
+        ;
+
+        
+    
+    
+            var circle_marker_1b23c1164c365644da9fc7803eeb7b4d = L.circleMarker(
+                [-21.7844, -48.154],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_8c6027a75488c5b8c925b9550ba96c70 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2119da67e82a1bf34e4be444223ece52 = $(`<div id="html_2119da67e82a1bf34e4be444223ece52" style="width: 100.0%; height: 100.0%;"><b>Jardim Brasil (Vila Xavier)</b><br>Media: R$ 268,571.43</div>`)[0];
+                popup_8c6027a75488c5b8c925b9550ba96c70.setContent(html_2119da67e82a1bf34e4be444223ece52);
+            
+        
+
+        circle_marker_1b23c1164c365644da9fc7803eeb7b4d.bindPopup(popup_8c6027a75488c5b8c925b9550ba96c70)
+        ;
+
+        
+    
+    
+            var circle_marker_879303ace445270007cb2547f456e033 = L.circleMarker(
+                [-21.7671, -48.1565],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_775887f32329101e98d150a0b0de481f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fcba14854b6dfec401df77f2ba9073f0 = $(`<div id="html_fcba14854b6dfec401df77f2ba9073f0" style="width: 100.0%; height: 100.0%;"><b>Jardim Brasília (Vila Xavier)</b><br>Media: R$ 177,500.00</div>`)[0];
+                popup_775887f32329101e98d150a0b0de481f.setContent(html_fcba14854b6dfec401df77f2ba9073f0);
+            
+        
+
+        circle_marker_879303ace445270007cb2547f456e033.bindPopup(popup_775887f32329101e98d150a0b0de481f)
+        ;
+
+        
+    
+    
+            var circle_marker_47ba5742ccc9aaa1d14208301aa8cad8 = L.circleMarker(
+                [-21.8007, -48.1943],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_5af6dcc437e48c81c759292bd733690d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_55dd7643666ed56757bcd5e2594552a5 = $(`<div id="html_55dd7643666ed56757bcd5e2594552a5" style="width: 100.0%; height: 100.0%;"><b>Jardim Califórnia</b><br>Media: R$ 163,916.67</div>`)[0];
+                popup_5af6dcc437e48c81c759292bd733690d.setContent(html_55dd7643666ed56757bcd5e2594552a5);
+            
+        
+
+        circle_marker_47ba5742ccc9aaa1d14208301aa8cad8.bindPopup(popup_5af6dcc437e48c81c759292bd733690d)
+        ;
+
+        
+    
+    
+            var circle_marker_3cf914dff4b5a99fc77c13df5b2b0176 = L.circleMarker(
+                [-21.81, -48.165],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_1d4f2a524e6e5b7f13fa9192eef6c84d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_98785c5641139c98a89a423d1e541cdd = $(`<div id="html_98785c5641139c98a89a423d1e541cdd" style="width: 100.0%; height: 100.0%;"><b>Jardim Cruzeiro do Sul I e II</b><br>Media: R$ 388,000.00</div>`)[0];
+                popup_1d4f2a524e6e5b7f13fa9192eef6c84d.setContent(html_98785c5641139c98a89a423d1e541cdd);
+            
+        
+
+        circle_marker_3cf914dff4b5a99fc77c13df5b2b0176.bindPopup(popup_1d4f2a524e6e5b7f13fa9192eef6c84d)
+        ;
+
+        
+    
+    
+            var circle_marker_f608ea1058d5207120a1bd6febf033a1 = L.circleMarker(
+                [-21.805, -48.152],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_224bf3d4b5c124d159a33a6508840f13 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e160a138280882ccdb2c34780f0b7873 = $(`<div id="html_e160a138280882ccdb2c34780f0b7873" style="width: 100.0%; height: 100.0%;"><b>Jardim Domingos Sávio</b><br>Media: R$ 275,000.00</div>`)[0];
+                popup_224bf3d4b5c124d159a33a6508840f13.setContent(html_e160a138280882ccdb2c34780f0b7873);
+            
+        
+
+        circle_marker_f608ea1058d5207120a1bd6febf033a1.bindPopup(popup_224bf3d4b5c124d159a33a6508840f13)
+        ;
+
+        
+    
+    
+            var circle_marker_d7fe40dfb784511d7572049ac2518bd1 = L.circleMarker(
+                [-21.78, -48.165],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_93cb088bf770e13e5f6ff17f50505cae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_50eec601c7cf48b4bea9cf2da6b7c0d0 = $(`<div id="html_50eec601c7cf48b4bea9cf2da6b7c0d0" style="width: 100.0%; height: 100.0%;"><b>Jardim Eliana</b><br>Media: R$ 455,000.00</div>`)[0];
+                popup_93cb088bf770e13e5f6ff17f50505cae.setContent(html_50eec601c7cf48b4bea9cf2da6b7c0d0);
+            
+        
+
+        circle_marker_d7fe40dfb784511d7572049ac2518bd1.bindPopup(popup_93cb088bf770e13e5f6ff17f50505cae)
+        ;
+
+        
+    
+    
+            var circle_marker_b0fa4b7f1f60309d07574bfbcedfcfe7 = L.circleMarker(
+                [-21.8178, -48.1453],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_787a5ac2a369a7fc13bf204fe5563f1b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_82b753e4957aa21cdfa0e9e32c37cbe5 = $(`<div id="html_82b753e4957aa21cdfa0e9e32c37cbe5" style="width: 100.0%; height: 100.0%;"><b>Jardim Esplanada</b><br>Media: R$ 139,000.00</div>`)[0];
+                popup_787a5ac2a369a7fc13bf204fe5563f1b.setContent(html_82b753e4957aa21cdfa0e9e32c37cbe5);
+            
+        
+
+        circle_marker_b0fa4b7f1f60309d07574bfbcedfcfe7.bindPopup(popup_787a5ac2a369a7fc13bf204fe5563f1b)
+        ;
+
+        
+    
+    
+            var circle_marker_d9f022d2405974267843a0b971e7e6cc = L.circleMarker(
+                [-21.77, -48.155],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_dca54250fdf99561921282859a87b3ae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1d3ddcaf2f8f41ce7182c66fa303c47c = $(`<div id="html_1d3ddcaf2f8f41ce7182c66fa303c47c" style="width: 100.0%; height: 100.0%;"><b>Jardim Europa (Vila Xavier)</b><br>Media: R$ 224,166.67</div>`)[0];
+                popup_dca54250fdf99561921282859a87b3ae.setContent(html_1d3ddcaf2f8f41ce7182c66fa303c47c);
+            
+        
+
+        circle_marker_d9f022d2405974267843a0b971e7e6cc.bindPopup(popup_dca54250fdf99561921282859a87b3ae)
+        ;
+
+        
+    
+    
+            var circle_marker_509264eec4323cb1002fcea0cb0e4e59 = L.circleMarker(
+                [-21.774, -48.165],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_cc1d1abefc8d84529d6ee8521409d805 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0f18543a3ef1769f0a724e51f196737e = $(`<div id="html_0f18543a3ef1769f0a724e51f196737e" style="width: 100.0%; height: 100.0%;"><b>Jardim Floridiana (Vila Xavier)</b><br>Media: R$ 491,666.67</div>`)[0];
+                popup_cc1d1abefc8d84529d6ee8521409d805.setContent(html_0f18543a3ef1769f0a724e51f196737e);
+            
+        
+
+        circle_marker_509264eec4323cb1002fcea0cb0e4e59.bindPopup(popup_cc1d1abefc8d84529d6ee8521409d805)
+        ;
+
+        
+    
+    
+            var circle_marker_1c74f98db30fb11f4664bc71161d3a8e = L.circleMarker(
+                [-21.792, -48.192],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_d5eba0adb622f5be44d2a86ac9fdf8a6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_587e443c73057cd36e2820752ad175d7 = $(`<div id="html_587e443c73057cd36e2820752ad175d7" style="width: 100.0%; height: 100.0%;"><b>Jardim Gardênias</b><br>Media: R$ 460,000.00</div>`)[0];
+                popup_d5eba0adb622f5be44d2a86ac9fdf8a6.setContent(html_587e443c73057cd36e2820752ad175d7);
+            
+        
+
+        circle_marker_1c74f98db30fb11f4664bc71161d3a8e.bindPopup(popup_d5eba0adb622f5be44d2a86ac9fdf8a6)
+        ;
+
+        
+    
+    
+            var circle_marker_4c6504cd12f8574e9226530461ec3464 = L.circleMarker(
+                [-21.8, -48.175],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_21741b501f63eeca421d855ee942b7bc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_43ad3731308a24226a8a20829444d2e5 = $(`<div id="html_43ad3731308a24226a8a20829444d2e5" style="width: 100.0%; height: 100.0%;"><b>Jardim Higienópolis</b><br>Media: R$ 312,500.00</div>`)[0];
+                popup_21741b501f63eeca421d855ee942b7bc.setContent(html_43ad3731308a24226a8a20829444d2e5);
+            
+        
+
+        circle_marker_4c6504cd12f8574e9226530461ec3464.bindPopup(popup_21741b501f63eeca421d855ee942b7bc)
+        ;
+
+        
+    
+    
+            var circle_marker_5d727556334ba235c995227b5cbffb92 = L.circleMarker(
+                [-21.7546, -48.1595],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_9b46055e8bb9ba93d6d231a4587074ab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_73e8dc8dac18114aa73ca55cda7ed6e6 = $(`<div id="html_73e8dc8dac18114aa73ca55cda7ed6e6" style="width: 100.0%; height: 100.0%;"><b>Jardim Imperador</b><br>Media: R$ 620,000.00</div>`)[0];
+                popup_9b46055e8bb9ba93d6d231a4587074ab.setContent(html_73e8dc8dac18114aa73ca55cda7ed6e6);
+            
+        
+
+        circle_marker_5d727556334ba235c995227b5cbffb92.bindPopup(popup_9b46055e8bb9ba93d6d231a4587074ab)
+        ;
+
+        
+    
+    
+            var circle_marker_74906956994c9439e8a9446411dedfe1 = L.circleMarker(
+                [-21.7546, -48.1595],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_39c2bb7effb4550d78c94325f65c4561 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c7755375cd858ec75ff07536a700cb87 = $(`<div id="html_c7755375cd858ec75ff07536a700cb87" style="width: 100.0%; height: 100.0%;"><b>Jardim Imperador II</b><br>Media: R$ 370,000.00</div>`)[0];
+                popup_39c2bb7effb4550d78c94325f65c4561.setContent(html_c7755375cd858ec75ff07536a700cb87);
+            
+        
+
+        circle_marker_74906956994c9439e8a9446411dedfe1.bindPopup(popup_39c2bb7effb4550d78c94325f65c4561)
+        ;
+
+        
+    
+    
+            var circle_marker_3c73316db39ec2d8654b07765aabe640 = L.circleMarker(
+                [-21.8183, -48.1432],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_06c42988349eb110c1e8c9ca400d4ee6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8e402f67c6f1741e209a2b4c692d94e7 = $(`<div id="html_8e402f67c6f1741e209a2b4c692d94e7" style="width: 100.0%; height: 100.0%;"><b>Jardim Imperial</b><br>Media: R$ 390,000.00</div>`)[0];
+                popup_06c42988349eb110c1e8c9ca400d4ee6.setContent(html_8e402f67c6f1741e209a2b4c692d94e7);
+            
+        
+
+        circle_marker_3c73316db39ec2d8654b07765aabe640.bindPopup(popup_06c42988349eb110c1e8c9ca400d4ee6)
+        ;
+
+        
+    
+    
+            var circle_marker_102d629a224872bb59836b611f2765eb = L.circleMarker(
+                [-21.7465, -48.1433],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_0cabf8d7e69b44d0b8fed7f4d929d992 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2fe9d1c86152ce98c4ac6ccd62b63e40 = $(`<div id="html_2fe9d1c86152ce98c4ac6ccd62b63e40" style="width: 100.0%; height: 100.0%;"><b>Jardim Indaiá</b><br>Media: R$ 284,333.33</div>`)[0];
+                popup_0cabf8d7e69b44d0b8fed7f4d929d992.setContent(html_2fe9d1c86152ce98c4ac6ccd62b63e40);
+            
+        
+
+        circle_marker_102d629a224872bb59836b611f2765eb.bindPopup(popup_0cabf8d7e69b44d0b8fed7f4d929d992)
+        ;
+
+        
+    
+    
+            var circle_marker_9cf649d20ae76818c5b8545bfc18f5aa = L.circleMarker(
+                [-21.787, -48.201],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_cb74cad169062c508c9a9582f51d8cb1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_986dfc549d9c68f1dc74c72f43a843c9 = $(`<div id="html_986dfc549d9c68f1dc74c72f43a843c9" style="width: 100.0%; height: 100.0%;"><b>Jardim Magnólias</b><br>Media: R$ 344,408.57</div>`)[0];
+                popup_cb74cad169062c508c9a9582f51d8cb1.setContent(html_986dfc549d9c68f1dc74c72f43a843c9);
+            
+        
+
+        circle_marker_9cf649d20ae76818c5b8545bfc18f5aa.bindPopup(popup_cb74cad169062c508c9a9582f51d8cb1)
+        ;
+
+        
+    
+    
+            var circle_marker_71d34b85c9885729158d83d5c0419c94 = L.circleMarker(
+                [-21.795, -48.195],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_6bef798fae6388381e239dfcf1f5a270 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f31a2c04423fa04fed689488bf7bab2e = $(`<div id="html_f31a2c04423fa04fed689488bf7bab2e" style="width: 100.0%; height: 100.0%;"><b>Jardim Mangiacapra</b><br>Media: R$ 420,000.00</div>`)[0];
+                popup_6bef798fae6388381e239dfcf1f5a270.setContent(html_f31a2c04423fa04fed689488bf7bab2e);
+            
+        
+
+        circle_marker_71d34b85c9885729158d83d5c0419c94.bindPopup(popup_6bef798fae6388381e239dfcf1f5a270)
+        ;
+
+        
+    
+    
+            var circle_marker_415a1e2572278193437dd1bb599a06ac = L.circleMarker(
+                [-21.7564, -48.1651],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_79867fe5ee365409f3bf65c5bcdd328b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a0fff88affc5fa84d95a21ac80b0c638 = $(`<div id="html_a0fff88affc5fa84d95a21ac80b0c638" style="width: 100.0%; height: 100.0%;"><b>Jardim Margarida</b><br>Media: R$ 350,000.00</div>`)[0];
+                popup_79867fe5ee365409f3bf65c5bcdd328b.setContent(html_a0fff88affc5fa84d95a21ac80b0c638);
+            
+        
+
+        circle_marker_415a1e2572278193437dd1bb599a06ac.bindPopup(popup_79867fe5ee365409f3bf65c5bcdd328b)
+        ;
+
+        
+    
+    
+            var circle_marker_317863df047991f665fadfce239ca0a5 = L.circleMarker(
+                [-21.7256, -48.0977],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_3dc01e4a8df7d05ca9e4351eb00355c3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2c56f90ed3288293f23988571ccfd798 = $(`<div id="html_2c56f90ed3288293f23988571ccfd798" style="width: 100.0%; height: 100.0%;"><b>Jardim Maria Luiza</b><br>Media: R$ 282,500.00</div>`)[0];
+                popup_3dc01e4a8df7d05ca9e4351eb00355c3.setContent(html_2c56f90ed3288293f23988571ccfd798);
+            
+        
+
+        circle_marker_317863df047991f665fadfce239ca0a5.bindPopup(popup_3dc01e4a8df7d05ca9e4351eb00355c3)
+        ;
+
+        
+    
+    
+            var circle_marker_c4d78e9aa06fa3d43ad3f665fa1d6e88 = L.circleMarker(
+                [-21.7421, -48.1976],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_4b13568334b5996ee8aebbe75642ff2c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dcdcbe253885d660167955e4791b27b0 = $(`<div id="html_dcdcbe253885d660167955e4791b27b0" style="width: 100.0%; height: 100.0%;"><b>Jardim Maria Luiza V</b><br>Media: R$ 500,000.00</div>`)[0];
+                popup_4b13568334b5996ee8aebbe75642ff2c.setContent(html_dcdcbe253885d660167955e4791b27b0);
+            
+        
+
+        circle_marker_c4d78e9aa06fa3d43ad3f665fa1d6e88.bindPopup(popup_4b13568334b5996ee8aebbe75642ff2c)
+        ;
+
+        
+    
+    
+            var circle_marker_b0a918db4e66fb71658a3e7255c6fa97 = L.circleMarker(
+                [-21.778, -48.172],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_d608a5117ae3bacc326db24fe8fd18dc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d22f85a9d826613b097b5e6c186c0004 = $(`<div id="html_d22f85a9d826613b097b5e6c186c0004" style="width: 100.0%; height: 100.0%;"><b>Jardim Marialice</b><br>Media: R$ 480,000.00</div>`)[0];
+                popup_d608a5117ae3bacc326db24fe8fd18dc.setContent(html_d22f85a9d826613b097b5e6c186c0004);
+            
+        
+
+        circle_marker_b0a918db4e66fb71658a3e7255c6fa97.bindPopup(popup_d608a5117ae3bacc326db24fe8fd18dc)
+        ;
+
+        
+    
+    
+            var circle_marker_2c20aaa7242adbeddee9b20b8863c7da = L.circleMarker(
+                [-21.786, -48.194],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_0dcca855c8eff6c5975ca93ba670cf36 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_10bfbd39d2c45a0a805f40bef8e91a6c = $(`<div id="html_10bfbd39d2c45a0a805f40bef8e91a6c" style="width: 100.0%; height: 100.0%;"><b>Jardim Marivan</b><br>Media: R$ 442,832.00</div>`)[0];
+                popup_0dcca855c8eff6c5975ca93ba670cf36.setContent(html_10bfbd39d2c45a0a805f40bef8e91a6c);
+            
+        
+
+        circle_marker_2c20aaa7242adbeddee9b20b8863c7da.bindPopup(popup_0dcca855c8eff6c5975ca93ba670cf36)
+        ;
+
+        
+    
+    
+            var circle_marker_d4db8df83ab0db5786ff6e9c3bc61396 = L.circleMarker(
+                [-21.775, -48.1599],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_0e9617ffc81cbcdf26f34cc34936b93e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a8efa34dc340fb7a122a3054bc89469b = $(`<div id="html_a8efa34dc340fb7a122a3054bc89469b" style="width: 100.0%; height: 100.0%;"><b>Jardim Morada do Sol (Vila Xavier)</b><br>Media: R$ 621,666.67</div>`)[0];
+                popup_0e9617ffc81cbcdf26f34cc34936b93e.setContent(html_a8efa34dc340fb7a122a3054bc89469b);
+            
+        
+
+        circle_marker_d4db8df83ab0db5786ff6e9c3bc61396.bindPopup(popup_0e9617ffc81cbcdf26f34cc34936b93e)
+        ;
+
+        
+    
+    
+            var circle_marker_ada5159cc4f2ecdba1d1a7c8bc961481 = L.circleMarker(
+                [-21.768, -48.158],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_fa1f2c65f8d9a4b6fc3358a7a5ab6357 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4aae41d6ab5ebcf6ba7f0e4c948b00cd = $(`<div id="html_4aae41d6ab5ebcf6ba7f0e4c948b00cd" style="width: 100.0%; height: 100.0%;"><b>Jardim Morumbi</b><br>Media: R$ 919,245.00</div>`)[0];
+                popup_fa1f2c65f8d9a4b6fc3358a7a5ab6357.setContent(html_4aae41d6ab5ebcf6ba7f0e4c948b00cd);
+            
+        
+
+        circle_marker_ada5159cc4f2ecdba1d1a7c8bc961481.bindPopup(popup_fa1f2c65f8d9a4b6fc3358a7a5ab6357)
+        ;
+
+        
+    
+    
+            var circle_marker_c31f607aa15c75cf2af7c2959862750b = L.circleMarker(
+                [-21.782, -48.208],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_1f8b33fa0c0b9caeaf97a4fb1b6bb4f0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3fe32e44322a39c9f9c2341bdcebc14d = $(`<div id="html_3fe32e44322a39c9f9c2341bdcebc14d" style="width: 100.0%; height: 100.0%;"><b>Jardim Nova América</b><br>Media: R$ 513,000.00</div>`)[0];
+                popup_1f8b33fa0c0b9caeaf97a4fb1b6bb4f0.setContent(html_3fe32e44322a39c9f9c2341bdcebc14d);
+            
+        
+
+        circle_marker_c31f607aa15c75cf2af7c2959862750b.bindPopup(popup_1f8b33fa0c0b9caeaf97a4fb1b6bb4f0)
+        ;
+
+        
+    
+    
+            var circle_marker_bbb191b5805f1f7b8e01ce5e426512cd = L.circleMarker(
+                [-21.775, -48.2051],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_7e70e3030182eb1630c3128514457d22 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3c8376c98d56b468a9ec09a510281794 = $(`<div id="html_3c8376c98d56b468a9ec09a510281794" style="width: 100.0%; height: 100.0%;"><b>Jardim Nova Araraquara</b><br>Media: R$ 434,166.67</div>`)[0];
+                popup_7e70e3030182eb1630c3128514457d22.setContent(html_3c8376c98d56b468a9ec09a510281794);
+            
+        
+
+        circle_marker_bbb191b5805f1f7b8e01ce5e426512cd.bindPopup(popup_7e70e3030182eb1630c3128514457d22)
+        ;
+
+        
+    
+    
+            var circle_marker_ba17f7eef9a50b54351c8b649f916953 = L.circleMarker(
+                [-21.812, -48.158],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_9c9ccc14d3e0dbcab96fff37c989c4f6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_84ea8eda46b390e39a57cc5850f8b3dd = $(`<div id="html_84ea8eda46b390e39a57cc5850f8b3dd" style="width: 100.0%; height: 100.0%;"><b>Jardim Nova Época</b><br>Media: R$ 480,000.00</div>`)[0];
+                popup_9c9ccc14d3e0dbcab96fff37c989c4f6.setContent(html_84ea8eda46b390e39a57cc5850f8b3dd);
+            
+        
+
+        circle_marker_ba17f7eef9a50b54351c8b649f916953.bindPopup(popup_9c9ccc14d3e0dbcab96fff37c989c4f6)
+        ;
+
+        
+    
+    
+            var circle_marker_67633e142731a9b3f533eb1b97983f08 = L.circleMarker(
+                [-21.79, -48.175],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_ab8acbcbec3076278874cd6e08d4cf44 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b5d7e9ed4c7ffab4faeaf385af412e92 = $(`<div id="html_b5d7e9ed4c7ffab4faeaf385af412e92" style="width: 100.0%; height: 100.0%;"><b>Jardim Padre Anchieta</b><br>Media: R$ 386,666.67</div>`)[0];
+                popup_ab8acbcbec3076278874cd6e08d4cf44.setContent(html_b5d7e9ed4c7ffab4faeaf385af412e92);
+            
+        
+
+        circle_marker_67633e142731a9b3f533eb1b97983f08.bindPopup(popup_ab8acbcbec3076278874cd6e08d4cf44)
+        ;
+
+        
+    
+    
+            var circle_marker_c48384f34cc37c693f3f0fb927e226f3 = L.circleMarker(
+                [-21.795, -48.2],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_c728e4fedd0a5ef1337745bbff1e0425 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_af81bd2e65b5603b75549213a705064c = $(`<div id="html_af81bd2e65b5603b75549213a705064c" style="width: 100.0%; height: 100.0%;"><b>Jardim Panorama</b><br>Media: R$ 242,000.00</div>`)[0];
+                popup_c728e4fedd0a5ef1337745bbff1e0425.setContent(html_af81bd2e65b5603b75549213a705064c);
+            
+        
+
+        circle_marker_c48384f34cc37c693f3f0fb927e226f3.bindPopup(popup_c728e4fedd0a5ef1337745bbff1e0425)
+        ;
+
+        
+    
+    
+            var circle_marker_2d518d4cef9046233e13be200201d216 = L.circleMarker(
+                [-21.775, -48.16],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_a0ff385d4b9cd9baf62834b7271e595c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_67fad7503a9f6923622ee0d8ad568a9c = $(`<div id="html_67fad7503a9f6923622ee0d8ad568a9c" style="width: 100.0%; height: 100.0%;"><b>Jardim Paulistano (Vila Xavier)</b><br>Media: R$ 455,000.00</div>`)[0];
+                popup_a0ff385d4b9cd9baf62834b7271e595c.setContent(html_67fad7503a9f6923622ee0d8ad568a9c);
+            
+        
+
+        circle_marker_2d518d4cef9046233e13be200201d216.bindPopup(popup_a0ff385d4b9cd9baf62834b7271e595c)
+        ;
+
+        
+    
+    
+            var circle_marker_0a10fe8f83d3f6e0d16cf9031eb2d926 = L.circleMarker(
+                [-21.7697, -48.1364],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_35c6a7875f204f788ee9f59e993f5ddb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e716d2cb28af1efd3bf36bd2d492d209 = $(`<div id="html_e716d2cb28af1efd3bf36bd2d492d209" style="width: 100.0%; height: 100.0%;"><b>Jardim Pinheiros (Vila Xavier)</b><br>Media: R$ 361,666.67</div>`)[0];
+                popup_35c6a7875f204f788ee9f59e993f5ddb.setContent(html_e716d2cb28af1efd3bf36bd2d492d209);
+            
+        
+
+        circle_marker_0a10fe8f83d3f6e0d16cf9031eb2d926.bindPopup(popup_35c6a7875f204f788ee9f59e993f5ddb)
+        ;
+
+        
+    
+    
+            var circle_marker_a687e7e92096463cce56512043290fd6 = L.circleMarker(
+                [-21.78, -48.19],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_29e336cc7db7b2b2bbb612340fb9987f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9c283a2172118a934891b50c43e35ab5 = $(`<div id="html_9c283a2172118a934891b50c43e35ab5" style="width: 100.0%; height: 100.0%;"><b>Jardim Portugal</b><br>Media: R$ 360,000.00</div>`)[0];
+                popup_29e336cc7db7b2b2bbb612340fb9987f.setContent(html_9c283a2172118a934891b50c43e35ab5);
+            
+        
+
+        circle_marker_a687e7e92096463cce56512043290fd6.bindPopup(popup_29e336cc7db7b2b2bbb612340fb9987f)
+        ;
+
+        
+    
+    
+            var circle_marker_020a8b1c3dc2db3161e5d5a64315b122 = L.circleMarker(
+                [-21.785, -48.21],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_51586f48f6947c4a1c4902865977a1a6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c14d314ab04489e7c59e36ad2d3f2be1 = $(`<div id="html_c14d314ab04489e7c59e36ad2d3f2be1" style="width: 100.0%; height: 100.0%;"><b>Jardim Primavera</b><br>Media: R$ 751,666.67</div>`)[0];
+                popup_51586f48f6947c4a1c4902865977a1a6.setContent(html_c14d314ab04489e7c59e36ad2d3f2be1);
+            
+        
+
+        circle_marker_020a8b1c3dc2db3161e5d5a64315b122.bindPopup(popup_51586f48f6947c4a1c4902865977a1a6)
+        ;
+
+        
+    
+    
+            var circle_marker_6b9298d0997169889fa52985c18462d7 = L.circleMarker(
+                [-21.788, -48.196],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_79e68350190791be33f139373c768086 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_89f5be1ed4d432243d7d0a1a3e5b12c7 = $(`<div id="html_89f5be1ed4d432243d7d0a1a3e5b12c7" style="width: 100.0%; height: 100.0%;"><b>Jardim Primor</b><br>Media: R$ 201,076.92</div>`)[0];
+                popup_79e68350190791be33f139373c768086.setContent(html_89f5be1ed4d432243d7d0a1a3e5b12c7);
+            
+        
+
+        circle_marker_6b9298d0997169889fa52985c18462d7.bindPopup(popup_79e68350190791be33f139373c768086)
+        ;
+
+        
+    
+    
+            var circle_marker_3289ec24852aac0b6b5ff5e9d23050df = L.circleMarker(
+                [-21.805, -48.16],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_6d7ff531c2051cde1bd0b0464a4d36be = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6176a17ab02cfdad5214da443717813b = $(`<div id="html_6176a17ab02cfdad5214da443717813b" style="width: 100.0%; height: 100.0%;"><b>Jardim Quitandinha</b><br>Media: R$ 172,153.85</div>`)[0];
+                popup_6d7ff531c2051cde1bd0b0464a4d36be.setContent(html_6176a17ab02cfdad5214da443717813b);
+            
+        
+
+        circle_marker_3289ec24852aac0b6b5ff5e9d23050df.bindPopup(popup_6d7ff531c2051cde1bd0b0464a4d36be)
+        ;
+
+        
+    
+    
+            var circle_marker_fbf862d2802876e3f6620e7c52192484 = L.circleMarker(
+                [-21.807, -48.162],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_015a1b8f64ae272f5317358cb4659d51 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8d0f05609aede17dd08bb810ba5ded50 = $(`<div id="html_8d0f05609aede17dd08bb810ba5ded50" style="width: 100.0%; height: 100.0%;"><b>Jardim Quitandinha II</b><br>Media: R$ 149,550.27</div>`)[0];
+                popup_015a1b8f64ae272f5317358cb4659d51.setContent(html_8d0f05609aede17dd08bb810ba5ded50);
+            
+        
+
+        circle_marker_fbf862d2802876e3f6620e7c52192484.bindPopup(popup_015a1b8f64ae272f5317358cb4659d51)
+        ;
+
+        
+    
+    
+            var circle_marker_f333d38001b02515a2fd3d94cd57544a = L.circleMarker(
+                [-21.81, -48.17],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_e6b96bb09e51794ba64480334ed978f3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cfd24bcca04ad78c3deae65345750a8c = $(`<div id="html_cfd24bcca04ad78c3deae65345750a8c" style="width: 100.0%; height: 100.0%;"><b>Jardim Residencial Elvio Lupo</b><br>Media: R$ 184,968.69</div>`)[0];
+                popup_e6b96bb09e51794ba64480334ed978f3.setContent(html_cfd24bcca04ad78c3deae65345750a8c);
+            
+        
+
+        circle_marker_f333d38001b02515a2fd3d94cd57544a.bindPopup(popup_e6b96bb09e51794ba64480334ed978f3)
+        ;
+
+        
+    
+    
+            var circle_marker_cdbfc9ca70ef5566daeabd814ecdd2e9 = L.circleMarker(
+                [-21.8158, -48.1395],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_098c42b83e7d34e119ab830cd344ea9a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6fda85f6bdb7732a41e35eea767fb065 = $(`<div id="html_6fda85f6bdb7732a41e35eea767fb065" style="width: 100.0%; height: 100.0%;"><b>Jardim Residencial Iedda</b><br>Media: R$ 650,000.00</div>`)[0];
+                popup_098c42b83e7d34e119ab830cd344ea9a.setContent(html_6fda85f6bdb7732a41e35eea767fb065);
+            
+        
+
+        circle_marker_cdbfc9ca70ef5566daeabd814ecdd2e9.bindPopup(popup_098c42b83e7d34e119ab830cd344ea9a)
+        ;
+
+        
+    
+    
+            var circle_marker_0ff5cd7cf0df571e9f41c596e087b5e0 = L.circleMarker(
+                [-21.795, -48.205],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_8da95257f7d73693baf68e737df78d4b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dedd8b511ef4f4011eaa74a290dc91e2 = $(`<div id="html_dedd8b511ef4f4011eaa74a290dc91e2" style="width: 100.0%; height: 100.0%;"><b>Jardim Residencial Itália</b><br>Media: R$ 450,000.00</div>`)[0];
+                popup_8da95257f7d73693baf68e737df78d4b.setContent(html_dedd8b511ef4f4011eaa74a290dc91e2);
+            
+        
+
+        circle_marker_0ff5cd7cf0df571e9f41c596e087b5e0.bindPopup(popup_8da95257f7d73693baf68e737df78d4b)
+        ;
+
+        
+    
+    
+            var circle_marker_6756df47440a2d536fbd4600ba120429 = L.circleMarker(
+                [-21.79, -48.165],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_30f0423d993f599cd77ce37bb3aa8a5c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fbea7827272f60abfaf4a5f92aa9a4c8 = $(`<div id="html_fbea7827272f60abfaf4a5f92aa9a4c8" style="width: 100.0%; height: 100.0%;"><b>Jardim Residencial Paraíso</b><br>Media: R$ 168,666.58</div>`)[0];
+                popup_30f0423d993f599cd77ce37bb3aa8a5c.setContent(html_fbea7827272f60abfaf4a5f92aa9a4c8);
+            
+        
+
+        circle_marker_6756df47440a2d536fbd4600ba120429.bindPopup(popup_30f0423d993f599cd77ce37bb3aa8a5c)
+        ;
+
+        
+    
+    
+            var circle_marker_7aabc9984aabc08bd2e45876268bcea8 = L.circleMarker(
+                [-21.8257, -48.1413],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_be3796488976877cb0b44a46a2e94c52 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_367f1a3b2145e4dad65424755a3cb99a = $(`<div id="html_367f1a3b2145e4dad65424755a3cb99a" style="width: 100.0%; height: 100.0%;"><b>Jardim Residencial Silvestre</b><br>Media: R$ 250,000.00</div>`)[0];
+                popup_be3796488976877cb0b44a46a2e94c52.setContent(html_367f1a3b2145e4dad65424755a3cb99a);
+            
+        
+
+        circle_marker_7aabc9984aabc08bd2e45876268bcea8.bindPopup(popup_be3796488976877cb0b44a46a2e94c52)
+        ;
+
+        
+    
+    
+            var circle_marker_391cbcbcbe45c40db01124bf66b0b07b = L.circleMarker(
+                [-21.7413, -48.1522],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_f2c07c5035b85fd1f0ae8fc409713abb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_751df3cbf169d1771fd8371cdfe95d31 = $(`<div id="html_751df3cbf169d1771fd8371cdfe95d31" style="width: 100.0%; height: 100.0%;"><b>Jardim Roberto Selmi Dei</b><br>Media: R$ 311,545.45</div>`)[0];
+                popup_f2c07c5035b85fd1f0ae8fc409713abb.setContent(html_751df3cbf169d1771fd8371cdfe95d31);
+            
+        
+
+        circle_marker_391cbcbcbe45c40db01124bf66b0b07b.bindPopup(popup_f2c07c5035b85fd1f0ae8fc409713abb)
+        ;
+
+        
+    
+    
+            var circle_marker_a9581cef1345dc5ce257392fc543e367 = L.circleMarker(
+                [-21.798, -48.203],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_12c1f2a22ca8ffd02906f4e8c5d10e74 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f8c47db7cb5b76669217d056a62921cd = $(`<div id="html_f8c47db7cb5b76669217d056a62921cd" style="width: 100.0%; height: 100.0%;"><b>Jardim Santa Angelina</b><br>Media: R$ 440,000.00</div>`)[0];
+                popup_12c1f2a22ca8ffd02906f4e8c5d10e74.setContent(html_f8c47db7cb5b76669217d056a62921cd);
+            
+        
+
+        circle_marker_a9581cef1345dc5ce257392fc543e367.bindPopup(popup_12c1f2a22ca8ffd02906f4e8c5d10e74)
+        ;
+
+        
+    
+    
+            var circle_marker_8621b66654b17927c6f7df53853d5016 = L.circleMarker(
+                [-21.773, -48.161],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_e92052f3d71f9315fa0876a3568c2790 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7f1e2d96d4fc07659a051cf5fabe1398 = $(`<div id="html_7f1e2d96d4fc07659a051cf5fabe1398" style="width: 100.0%; height: 100.0%;"><b>Jardim Santa Clara (Vila Xavier)</b><br>Media: R$ 260,000.00</div>`)[0];
+                popup_e92052f3d71f9315fa0876a3568c2790.setContent(html_7f1e2d96d4fc07659a051cf5fabe1398);
+            
+        
+
+        circle_marker_8621b66654b17927c6f7df53853d5016.bindPopup(popup_e92052f3d71f9315fa0876a3568c2790)
+        ;
+
+        
+    
+    
+            var circle_marker_e368b7c7aee0a835354b56cfb25b0a90 = L.circleMarker(
+                [-21.7927, -48.1501],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_a0c4da07f02b35daab4a78ed1024efaa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a51a9694d7990b29323e4b10d5612e70 = $(`<div id="html_a51a9694d7990b29323e4b10d5612e70" style="width: 100.0%; height: 100.0%;"><b>Jardim Santa Júlia (Vila Xavier)</b><br>Media: R$ 422,500.00</div>`)[0];
+                popup_a0c4da07f02b35daab4a78ed1024efaa.setContent(html_a51a9694d7990b29323e4b10d5612e70);
+            
+        
+
+        circle_marker_e368b7c7aee0a835354b56cfb25b0a90.bindPopup(popup_a0c4da07f02b35daab4a78ed1024efaa)
+        ;
+
+        
+    
+    
+            var circle_marker_d073df722059fa4cc0a15ddc66b6a15f = L.circleMarker(
+                [-21.794, -48.152],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_1ac29dfdca90c8103688fa5b2ab8d7bd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bc4467580990a688e5eadf2a8efeb102 = $(`<div id="html_bc4467580990a688e5eadf2a8efeb102" style="width: 100.0%; height: 100.0%;"><b>Jardim Santa Júlia III</b><br>Media: R$ 285,000.00</div>`)[0];
+                popup_1ac29dfdca90c8103688fa5b2ab8d7bd.setContent(html_bc4467580990a688e5eadf2a8efeb102);
+            
+        
+
+        circle_marker_d073df722059fa4cc0a15ddc66b6a15f.bindPopup(popup_1ac29dfdca90c8103688fa5b2ab8d7bd)
+        ;
+
+        
+    
+    
+            var circle_marker_df46c402e47ee485b02a85e7f146629e = L.circleMarker(
+                [-21.6881, -48.1319],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_34b999dafc589693e25efa25ece3cc07 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_49e5f3430b42b4186220b1604f766c75 = $(`<div id="html_49e5f3430b42b4186220b1604f766c75" style="width: 100.0%; height: 100.0%;"><b>Jardim Santa Lúcia</b><br>Media: R$ 454,000.00</div>`)[0];
+                popup_34b999dafc589693e25efa25ece3cc07.setContent(html_49e5f3430b42b4186220b1604f766c75);
+            
+        
+
+        circle_marker_df46c402e47ee485b02a85e7f146629e.bindPopup(popup_34b999dafc589693e25efa25ece3cc07)
+        ;
+
+        
+    
+    
+            var circle_marker_1e3887a85ee71abaaabb555a0b7af6e9 = L.circleMarker(
+                [-21.8191, -48.149],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_15dfaaba57e6c7e8023bef6d0536b8ce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4a8117bbe9485b1d9055dc4d58d47491 = $(`<div id="html_4a8117bbe9485b1d9055dc4d58d47491" style="width: 100.0%; height: 100.0%;"><b>Jardim Santa Marta</b><br>Media: R$ 500,000.00</div>`)[0];
+                popup_15dfaaba57e6c7e8023bef6d0536b8ce.setContent(html_4a8117bbe9485b1d9055dc4d58d47491);
+            
+        
+
+        circle_marker_1e3887a85ee71abaaabb555a0b7af6e9.bindPopup(popup_15dfaaba57e6c7e8023bef6d0536b8ce)
+        ;
+
+        
+    
+    
+            var circle_marker_3d9b1bf7949997175d4e70b0dfefe5fb = L.circleMarker(
+                [-21.802, -48.168],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_55ea6c3d04a898e5524829a7c5e8a7bc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f4135ca677371377d85a56b5e65b7a07 = $(`<div id="html_f4135ca677371377d85a56b5e65b7a07" style="width: 100.0%; height: 100.0%;"><b>Jardim Santa Rita de Cássia</b><br>Media: R$ 425,000.00</div>`)[0];
+                popup_55ea6c3d04a898e5524829a7c5e8a7bc.setContent(html_f4135ca677371377d85a56b5e65b7a07);
+            
+        
+
+        circle_marker_3d9b1bf7949997175d4e70b0dfefe5fb.bindPopup(popup_55ea6c3d04a898e5524829a7c5e8a7bc)
+        ;
+
+        
+    
+    
+            var circle_marker_c3faa72c03c7bb77dde95056beedfd94 = L.circleMarker(
+                [-21.772, -48.166],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_bb08b758b76a2a15c00ecfb5f86b455c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_95bf8c83e473baa72ffc18d243500a06 = $(`<div id="html_95bf8c83e473baa72ffc18d243500a06" style="width: 100.0%; height: 100.0%;"><b>Jardim Silvânia (Vila Xavier)</b><br>Media: R$ 530,000.00</div>`)[0];
+                popup_bb08b758b76a2a15c00ecfb5f86b455c.setContent(html_95bf8c83e473baa72ffc18d243500a06);
+            
+        
+
+        circle_marker_c3faa72c03c7bb77dde95056beedfd94.bindPopup(popup_bb08b758b76a2a15c00ecfb5f86b455c)
+        ;
+
+        
+    
+    
+            var circle_marker_0b22743232a83ca80fc4c3eb69d57d81 = L.circleMarker(
+                [-21.7461, -48.1569],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_bc23c6c2ed93258596c5bdfb7d76e306 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b4acdf6cad2a6b8c3e22041c9ddfe75f = $(`<div id="html_b4acdf6cad2a6b8c3e22041c9ddfe75f" style="width: 100.0%; height: 100.0%;"><b>Jardim São Francisco</b><br>Media: R$ 340,000.00</div>`)[0];
+                popup_bc23c6c2ed93258596c5bdfb7d76e306.setContent(html_b4acdf6cad2a6b8c3e22041c9ddfe75f);
+            
+        
+
+        circle_marker_0b22743232a83ca80fc4c3eb69d57d81.bindPopup(popup_bc23c6c2ed93258596c5bdfb7d76e306)
+        ;
+
+        
+    
+    
+            var circle_marker_46b26ab33269c5b1cb9aac281bbea5d8 = L.circleMarker(
+                [-21.7917, -48.1978],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_5c46c9a95cc82125a3f10732bc956763 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_49ff31c3ea7b0a2e4edcfb29e9ff534d = $(`<div id="html_49ff31c3ea7b0a2e4edcfb29e9ff534d" style="width: 100.0%; height: 100.0%;"><b>Jardim São Gabriel</b><br>Media: R$ 450,000.00</div>`)[0];
+                popup_5c46c9a95cc82125a3f10732bc956763.setContent(html_49ff31c3ea7b0a2e4edcfb29e9ff534d);
+            
+        
+
+        circle_marker_46b26ab33269c5b1cb9aac281bbea5d8.bindPopup(popup_5c46c9a95cc82125a3f10732bc956763)
+        ;
+
+        
+    
+    
+            var circle_marker_d5ca447031d643ef6cd7d04e85e5beb6 = L.circleMarker(
+                [-21.774, -48.1611],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_dad4cded651ddc151e65662a864df65c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2918f1fcc7b90ced04fcc61d7106114c = $(`<div id="html_2918f1fcc7b90ced04fcc61d7106114c" style="width: 100.0%; height: 100.0%;"><b>Jardim São Jorge</b><br>Media: R$ 430,000.00</div>`)[0];
+                popup_dad4cded651ddc151e65662a864df65c.setContent(html_2918f1fcc7b90ced04fcc61d7106114c);
+            
+        
+
+        circle_marker_d5ca447031d643ef6cd7d04e85e5beb6.bindPopup(popup_dad4cded651ddc151e65662a864df65c)
+        ;
+
+        
+    
+    
+            var circle_marker_b19749c18301b5bc93c87110969334c6 = L.circleMarker(
+                [-21.7457, -48.1397],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_91f3c4559b395b4f31a40d4fd9a58f54 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9e1d1186834679b6f9b53f0f5f390945 = $(`<div id="html_9e1d1186834679b6f9b53f0f5f390945" style="width: 100.0%; height: 100.0%;"><b>Jardim São Rafael I</b><br>Media: R$ 181,602.00</div>`)[0];
+                popup_91f3c4559b395b4f31a40d4fd9a58f54.setContent(html_9e1d1186834679b6f9b53f0f5f390945);
+            
+        
+
+        circle_marker_b19749c18301b5bc93c87110969334c6.bindPopup(popup_91f3c4559b395b4f31a40d4fd9a58f54)
+        ;
+
+        
+    
+    
+            var circle_marker_77f30dc84ba1d1783643d9e6973302bb = L.circleMarker(
+                [-21.743, -48.1426],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_7f1f4e6af8852e3258e7b61af61ac7b1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6233062b2636eac669d2e6fe556cca9a = $(`<div id="html_6233062b2636eac669d2e6fe556cca9a" style="width: 100.0%; height: 100.0%;"><b>Jardim São Rafael II</b><br>Media: R$ 179,874.20</div>`)[0];
+                popup_7f1f4e6af8852e3258e7b61af61ac7b1.setContent(html_6233062b2636eac669d2e6fe556cca9a);
+            
+        
+
+        circle_marker_77f30dc84ba1d1783643d9e6973302bb.bindPopup(popup_7f1f4e6af8852e3258e7b61af61ac7b1)
+        ;
+
+        
+    
+    
+            var circle_marker_1ca18ce29a545de344fef6f67861ccc6 = L.circleMarker(
+                [-21.766, -48.164],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_7330989d33adec6ffe5fedb7786a5e10 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d324aec84fc3e36a1606ae05a6605e12 = $(`<div id="html_d324aec84fc3e36a1606ae05a6605e12" style="width: 100.0%; height: 100.0%;"><b>Jardim Tabapuã (Vila Xavier)</b><br>Media: R$ 519,000.00</div>`)[0];
+                popup_7330989d33adec6ffe5fedb7786a5e10.setContent(html_d324aec84fc3e36a1606ae05a6605e12);
+            
+        
+
+        circle_marker_1ca18ce29a545de344fef6f67861ccc6.bindPopup(popup_7330989d33adec6ffe5fedb7786a5e10)
+        ;
+
+        
+    
+    
+            var circle_marker_9dfbceb27bed0a9b9b3921850fffa981 = L.circleMarker(
+                [-21.8137, -48.1793],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_43442c5ef6d9f22070b46acd96ad8029 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9ce2aad4099e2a684852abb3470a820a = $(`<div id="html_9ce2aad4099e2a684852abb3470a820a" style="width: 100.0%; height: 100.0%;"><b>Jardim Tamoio</b><br>Media: R$ 150,000.00</div>`)[0];
+                popup_43442c5ef6d9f22070b46acd96ad8029.setContent(html_9ce2aad4099e2a684852abb3470a820a);
+            
+        
+
+        circle_marker_9dfbceb27bed0a9b9b3921850fffa981.bindPopup(popup_43442c5ef6d9f22070b46acd96ad8029)
+        ;
+
+        
+    
+    
+            var circle_marker_ca69748f9fb5ffe22dab763c4d0cc63d = L.circleMarker(
+                [-21.785, -48.155],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_0af0b27afff76f1aaa197cc10c50972b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8f6ae73f2be08af147a365fe1a5e7247 = $(`<div id="html_8f6ae73f2be08af147a365fe1a5e7247" style="width: 100.0%; height: 100.0%;"><b>Jardim Tinen</b><br>Media: R$ 270,000.00</div>`)[0];
+                popup_0af0b27afff76f1aaa197cc10c50972b.setContent(html_8f6ae73f2be08af147a365fe1a5e7247);
+            
+        
+
+        circle_marker_ca69748f9fb5ffe22dab763c4d0cc63d.bindPopup(popup_0af0b27afff76f1aaa197cc10c50972b)
+        ;
+
+        
+    
+    
+            var circle_marker_bc4615e7e468c5633d38d6206cc4a8b3 = L.circleMarker(
+                [-21.8, -48.21],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_63244a7a5e7a62eb02efb050354e4a66 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_20585dd5b990671605220c570a98bf96 = $(`<div id="html_20585dd5b990671605220c570a98bf96" style="width: 100.0%; height: 100.0%;"><b>Jardim Uirapuru</b><br>Media: R$ 340,000.00</div>`)[0];
+                popup_63244a7a5e7a62eb02efb050354e4a66.setContent(html_20585dd5b990671605220c570a98bf96);
+            
+        
+
+        circle_marker_bc4615e7e468c5633d38d6206cc4a8b3.bindPopup(popup_63244a7a5e7a62eb02efb050354e4a66)
+        ;
+
+        
+    
+    
+            var circle_marker_08b8664e0f68807fe9c37b724cbe3a7d = L.circleMarker(
+                [-21.7934, -48.2065],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_f8846027ce5e25d26d852601b377478c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6431dc85ee51d6025975fba1e606c4ea = $(`<div id="html_6431dc85ee51d6025975fba1e606c4ea" style="width: 100.0%; height: 100.0%;"><b>Jardim Universal</b><br>Media: R$ 154,448.48</div>`)[0];
+                popup_f8846027ce5e25d26d852601b377478c.setContent(html_6431dc85ee51d6025975fba1e606c4ea);
+            
+        
+
+        circle_marker_08b8664e0f68807fe9c37b724cbe3a7d.bindPopup(popup_f8846027ce5e25d26d852601b377478c)
+        ;
+
+        
+    
+    
+            var circle_marker_7a210124970d3d77d680839528f15777 = L.circleMarker(
+                [-21.799, -48.202],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_6d784af83c7eca55ca6a761e25b4fbfa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_898ca9bf67fbf96dd417e4d1d9b674f3 = $(`<div id="html_898ca9bf67fbf96dd417e4d1d9b674f3" style="width: 100.0%; height: 100.0%;"><b>Jardim Vale das Rosas</b><br>Media: R$ 844,180.00</div>`)[0];
+                popup_6d784af83c7eca55ca6a761e25b4fbfa.setContent(html_898ca9bf67fbf96dd417e4d1d9b674f3);
+            
+        
+
+        circle_marker_7a210124970d3d77d680839528f15777.bindPopup(popup_6d784af83c7eca55ca6a761e25b4fbfa)
+        ;
+
+        
+    
+    
+            var circle_marker_31588cb7b8bb55f96fab68d8be6cf0f9 = L.circleMarker(
+                [-21.768, -48.158],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_161bb4234fddef93e3b25301c01b6d5e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9fe2753253d71cd753fb4914d94f9f86 = $(`<div id="html_9fe2753253d71cd753fb4914d94f9f86" style="width: 100.0%; height: 100.0%;"><b>Jardim Viaduto (Vila Xavier)</b><br>Media: R$ 380,000.00</div>`)[0];
+                popup_161bb4234fddef93e3b25301c01b6d5e.setContent(html_9fe2753253d71cd753fb4914d94f9f86);
+            
+        
+
+        circle_marker_31588cb7b8bb55f96fab68d8be6cf0f9.bindPopup(popup_161bb4234fddef93e3b25301c01b6d5e)
+        ;
+
+        
+    
+    
+            var circle_marker_dbb29aecb69c900282575216c39bfc39 = L.circleMarker(
+                [-21.792, -48.198],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_e3b92824c6b3c1fd198820a8e36eee6b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_952d44fb8205a190feab67a7d6b8a49e = $(`<div id="html_952d44fb8205a190feab67a7d6b8a49e" style="width: 100.0%; height: 100.0%;"><b>Jardim Vitória</b><br>Media: R$ 400,000.00</div>`)[0];
+                popup_e3b92824c6b3c1fd198820a8e36eee6b.setContent(html_952d44fb8205a190feab67a7d6b8a49e);
+            
+        
+
+        circle_marker_dbb29aecb69c900282575216c39bfc39.bindPopup(popup_e3b92824c6b3c1fd198820a8e36eee6b)
+        ;
+
+        
+    
+    
+            var circle_marker_8371480d26fbe91ba664f048ef55346f = L.circleMarker(
+                [-21.7727, -48.1496],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_c4fcc78e46edeeedfa8b0affda1e38c5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9e68d1b106e8dc45c0b4589cd1e7471b = $(`<div id="html_9e68d1b106e8dc45c0b4589cd1e7471b" style="width: 100.0%; height: 100.0%;"><b>Jardim das Estações (Vila Xavier)</b><br>Media: R$ 296,428.57</div>`)[0];
+                popup_c4fcc78e46edeeedfa8b0affda1e38c5.setContent(html_9e68d1b106e8dc45c0b4589cd1e7471b);
+            
+        
+
+        circle_marker_8371480d26fbe91ba664f048ef55346f.bindPopup(popup_c4fcc78e46edeeedfa8b0affda1e38c5)
+        ;
+
+        
+    
+    
+            var circle_marker_4eef590a62a9b7ac74a88cccf02fb064 = L.circleMarker(
+                [-21.7885, -48.2061],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_31259b10268178ba33edf3e95230a83b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_55c95f9e803a05a5778ab219c606fae9 = $(`<div id="html_55c95f9e803a05a5778ab219c606fae9" style="width: 100.0%; height: 100.0%;"><b>Jardim das Flores</b><br>Media: R$ 183,992.38</div>`)[0];
+                popup_31259b10268178ba33edf3e95230a83b.setContent(html_55c95f9e803a05a5778ab219c606fae9);
+            
+        
+
+        circle_marker_4eef590a62a9b7ac74a88cccf02fb064.bindPopup(popup_31259b10268178ba33edf3e95230a83b)
+        ;
+
+        
+    
+    
+            var circle_marker_150cf6a8d361557f3a24ba375694a33a = L.circleMarker(
+                [-21.785, -48.2],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_f32951f35c6d00759c16c3ecc37ed3a6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a6adbf6d59d93abf08b204b23dc8b771 = $(`<div id="html_a6adbf6d59d93abf08b204b23dc8b771" style="width: 100.0%; height: 100.0%;"><b>Jardim das Roseiras</b><br>Media: R$ 130,000.00</div>`)[0];
+                popup_f32951f35c6d00759c16c3ecc37ed3a6.setContent(html_a6adbf6d59d93abf08b204b23dc8b771);
+            
+        
+
+        circle_marker_150cf6a8d361557f3a24ba375694a33a.bindPopup(popup_f32951f35c6d00759c16c3ecc37ed3a6)
+        ;
+
+        
+    
+    
+            var circle_marker_1b06d4661b992afe833986bafc57c6db = L.circleMarker(
+                [-21.788, -48.205],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_fea8e16c2f39050a55e9e7807edca290 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bdd6f889d8124bd23c828fa824564ed9 = $(`<div id="html_bdd6f889d8124bd23c828fa824564ed9" style="width: 100.0%; height: 100.0%;"><b>Jardim do Bosque</b><br>Media: R$ 389,966.67</div>`)[0];
+                popup_fea8e16c2f39050a55e9e7807edca290.setContent(html_bdd6f889d8124bd23c828fa824564ed9);
+            
+        
+
+        circle_marker_1b06d4661b992afe833986bafc57c6db.bindPopup(popup_fea8e16c2f39050a55e9e7807edca290)
+        ;
+
+        
+    
+    
+            var circle_marker_372e68f3c4ce32007b1eb8e4926c52a0 = L.circleMarker(
+                [-21.792, -48.188],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_126198bbf71ba9ad11b5c1216c950713 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8bb5ef101f1a09e590aae2bb3ecaeb88 = $(`<div id="html_8bb5ef101f1a09e590aae2bb3ecaeb88" style="width: 100.0%; height: 100.0%;"><b>Jardim do Carmo</b><br>Media: R$ 427,199.00</div>`)[0];
+                popup_126198bbf71ba9ad11b5c1216c950713.setContent(html_8bb5ef101f1a09e590aae2bb3ecaeb88);
+            
+        
+
+        circle_marker_372e68f3c4ce32007b1eb8e4926c52a0.bindPopup(popup_126198bbf71ba9ad11b5c1216c950713)
+        ;
+
+        
+    
+    
+            var circle_marker_c4398f2fc03024a39967d62de2b82122 = L.circleMarker(
+                [-21.8242, -48.1439],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_c264ea3482e3dd24729effc79e813915 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2574c445eebce64738b7a59733d0fd6d = $(`<div id="html_2574c445eebce64738b7a59733d0fd6d" style="width: 100.0%; height: 100.0%;"><b>Jardim dos Industriários</b><br>Media: R$ 270,000.00</div>`)[0];
+                popup_c264ea3482e3dd24729effc79e813915.setContent(html_2574c445eebce64738b7a59733d0fd6d);
+            
+        
+
+        circle_marker_c4398f2fc03024a39967d62de2b82122.bindPopup(popup_c264ea3482e3dd24729effc79e813915)
+        ;
+
+        
+    
+    
+            var circle_marker_b8b8045a5001a8d8907563fb33df16e4 = L.circleMarker(
+                [-21.795, -48.21],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_decbb843dec2b01c64fb5a6dd5a00947 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_11fe3af3404c1d15f75d6bf79e00c383 = $(`<div id="html_11fe3af3404c1d15f75d6bf79e00c383" style="width: 100.0%; height: 100.0%;"><b>Jardim dos Ipês</b><br>Media: R$ 495,000.00</div>`)[0];
+                popup_decbb843dec2b01c64fb5a6dd5a00947.setContent(html_11fe3af3404c1d15f75d6bf79e00c383);
+            
+        
+
+        circle_marker_b8b8045a5001a8d8907563fb33df16e4.bindPopup(popup_decbb843dec2b01c64fb5a6dd5a00947)
+        ;
+
+        
+    
+    
+            var circle_marker_d281695ad14d0227baf4c8dbf31af2bc = L.circleMarker(
+                [-21.7856, -48.199],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_5f6eb06e103fdfbe8328464fb6cf49f5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fd283dac20abee4632ddb3730eb513e9 = $(`<div id="html_fd283dac20abee4632ddb3730eb513e9" style="width: 100.0%; height: 100.0%;"><b>Jardim dos Manacás</b><br>Media: R$ 352,352.94</div>`)[0];
+                popup_5f6eb06e103fdfbe8328464fb6cf49f5.setContent(html_fd283dac20abee4632ddb3730eb513e9);
+            
+        
+
+        circle_marker_d281695ad14d0227baf4c8dbf31af2bc.bindPopup(popup_5f6eb06e103fdfbe8328464fb6cf49f5)
+        ;
+
+        
+    
+    
+            var circle_marker_45a333c4eabfff559e407b25ad9c8ba2 = L.circleMarker(
+                [-21.789, -48.202],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_4cc43da08127b306f98ed9edb1427748 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b81ec50b5891ca80b4b95661e8ae4906 = $(`<div id="html_b81ec50b5891ca80b4b95661e8ae4906" style="width: 100.0%; height: 100.0%;"><b>Jardim dos Oitis</b><br>Media: R$ 217,500.00</div>`)[0];
+                popup_4cc43da08127b306f98ed9edb1427748.setContent(html_b81ec50b5891ca80b4b95661e8ae4906);
+            
+        
+
+        circle_marker_45a333c4eabfff559e407b25ad9c8ba2.bindPopup(popup_4cc43da08127b306f98ed9edb1427748)
+        ;
+
+        
+    
+    
+            var circle_marker_a8378748ae76a820303a2d449b4e3b18 = L.circleMarker(
+                [-21.762, -48.2071],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_428c7e2141f58bdb568d96cde9fd975b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_45f32420eb1e88bcbb1701e3eb27f3af = $(`<div id="html_45f32420eb1e88bcbb1701e3eb27f3af" style="width: 100.0%; height: 100.0%;"><b>Jardim Águas do Paiol</b><br>Media: R$ 316,666.67</div>`)[0];
+                popup_428c7e2141f58bdb568d96cde9fd975b.setContent(html_45f32420eb1e88bcbb1701e3eb27f3af);
+            
+        
+
+        circle_marker_a8378748ae76a820303a2d449b4e3b18.bindPopup(popup_428c7e2141f58bdb568d96cde9fd975b)
+        ;
+
+        
+    
+    
+            var circle_marker_a018611d17c00cd68794dbde19ad23f5 = L.circleMarker(
+                [-21.772, -48.162],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_092c43740920ecdef456d93de8708914 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6fdd5e8ace9a7c87bc7838cdec458d1c = $(`<div id="html_6fdd5e8ace9a7c87bc7838cdec458d1c" style="width: 100.0%; height: 100.0%;"><b>Jardim Ártico</b><br>Media: R$ 638,600.00</div>`)[0];
+                popup_092c43740920ecdef456d93de8708914.setContent(html_6fdd5e8ace9a7c87bc7838cdec458d1c);
+            
+        
+
+        circle_marker_a018611d17c00cd68794dbde19ad23f5.bindPopup(popup_092c43740920ecdef456d93de8708914)
+        ;
+
+        
+    
+    
+            var circle_marker_9632de6784aa5f2b43c776cbf1dd17e7 = L.circleMarker(
+                [-21.785, -48.215],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_012ac0441d3dc22477f494bde4bb8f95 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bd577484862eaa455152401d2c67fa54 = $(`<div id="html_bd577484862eaa455152401d2c67fa54" style="width: 100.0%; height: 100.0%;"><b>Parque Alvorada</b><br>Media: R$ 400,000.00</div>`)[0];
+                popup_012ac0441d3dc22477f494bde4bb8f95.setContent(html_bd577484862eaa455152401d2c67fa54);
+            
+        
+
+        circle_marker_9632de6784aa5f2b43c776cbf1dd17e7.bindPopup(popup_012ac0441d3dc22477f494bde4bb8f95)
+        ;
+
+        
+    
+    
+            var circle_marker_5139747cf2f5f184cbb310b5548f0bc8 = L.circleMarker(
+                [-21.7792, -48.2096],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_c35726898418f72e06e43031a1a972f0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d63bb82ba7ffe63c4d69f069a787848b = $(`<div id="html_d63bb82ba7ffe63c4d69f069a787848b" style="width: 100.0%; height: 100.0%;"><b>Parque Atlanta</b><br>Media: R$ 166,000.00</div>`)[0];
+                popup_c35726898418f72e06e43031a1a972f0.setContent(html_d63bb82ba7ffe63c4d69f069a787848b);
+            
+        
+
+        circle_marker_5139747cf2f5f184cbb310b5548f0bc8.bindPopup(popup_c35726898418f72e06e43031a1a972f0)
+        ;
+
+        
+    
+    
+            var circle_marker_a6b98b6388c1a260884afe63f2e6d3c7 = L.circleMarker(
+                [-21.771, -48.163],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_5abab68b4aa9e4cdd23c1050d7b78212 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ad5e4710644411f35f71a61a4aeacfda = $(`<div id="html_ad5e4710644411f35f71a61a4aeacfda" style="width: 100.0%; height: 100.0%;"><b>Parque Gramado (Vila Xavier)</b><br>Media: R$ 250,000.00</div>`)[0];
+                popup_5abab68b4aa9e4cdd23c1050d7b78212.setContent(html_ad5e4710644411f35f71a61a4aeacfda);
+            
+        
+
+        circle_marker_a6b98b6388c1a260884afe63f2e6d3c7.bindPopup(popup_5abab68b4aa9e4cdd23c1050d7b78212)
+        ;
+
+        
+    
+    
+            var circle_marker_9fdcfadf1046d7ea707699151779e947 = L.circleMarker(
+                [-21.788, -48.158],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_3f7b1460e6c544d1d49c1d7976a30c16 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_51b5af42213a5a9c497120c53da7f5dc = $(`<div id="html_51b5af42213a5a9c497120c53da7f5dc" style="width: 100.0%; height: 100.0%;"><b>Parque Igaçaba</b><br>Media: R$ 405,000.00</div>`)[0];
+                popup_3f7b1460e6c544d1d49c1d7976a30c16.setContent(html_51b5af42213a5a9c497120c53da7f5dc);
+            
+        
+
+        circle_marker_9fdcfadf1046d7ea707699151779e947.bindPopup(popup_3f7b1460e6c544d1d49c1d7976a30c16)
+        ;
+
+        
+    
+    
+            var circle_marker_aa39a35b90c4770958e887a07744f0c0 = L.circleMarker(
+                [-21.7893, -48.1999],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_ce32fdb38f5de5523a0a745dcc3e8f54 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c9cb84838e76d7bbe300450b743073d2 = $(`<div id="html_c9cb84838e76d7bbe300450b743073d2" style="width: 100.0%; height: 100.0%;"><b>Parque Laranjeiras</b><br>Media: R$ 239,833.54</div>`)[0];
+                popup_ce32fdb38f5de5523a0a745dcc3e8f54.setContent(html_c9cb84838e76d7bbe300450b743073d2);
+            
+        
+
+        circle_marker_aa39a35b90c4770958e887a07744f0c0.bindPopup(popup_ce32fdb38f5de5523a0a745dcc3e8f54)
+        ;
+
+        
+    
+    
+            var circle_marker_9392d770ee10d3494f45b8fb95fdb6a8 = L.circleMarker(
+                [-21.7538, -48.1971],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_848dec888d9437f6f428509cc2ae6fcd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3d1fc4cff95079767e62695f1432c93d = $(`<div id="html_3d1fc4cff95079767e62695f1432c93d" style="width: 100.0%; height: 100.0%;"><b>Parque Residencial Damha</b><br>Media: R$ 1,286,403.33</div>`)[0];
+                popup_848dec888d9437f6f428509cc2ae6fcd.setContent(html_3d1fc4cff95079767e62695f1432c93d);
+            
+        
+
+        circle_marker_9392d770ee10d3494f45b8fb95fdb6a8.bindPopup(popup_848dec888d9437f6f428509cc2ae6fcd)
+        ;
+
+        
+    
+    
+            var circle_marker_43bd31cdab1c3b3e83fb9993739d7f31 = L.circleMarker(
+                [-21.788, -48.162],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_f1c022aaba8c3e2a738824069b29e5c0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_858961df3abcfdc20961d15abe1d514a = $(`<div id="html_858961df3abcfdc20961d15abe1d514a" style="width: 100.0%; height: 100.0%;"><b>Parque Residencial Iguatemi</b><br>Media: R$ 150,735.68</div>`)[0];
+                popup_f1c022aaba8c3e2a738824069b29e5c0.setContent(html_858961df3abcfdc20961d15abe1d514a);
+            
+        
+
+        circle_marker_43bd31cdab1c3b3e83fb9993739d7f31.bindPopup(popup_f1c022aaba8c3e2a738824069b29e5c0)
+        ;
+
+        
+    
+    
+            var circle_marker_6e431fdf8938f60e01fa976003310ec9 = L.circleMarker(
+                [-21.7828, -48.132],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_27b7f1a34919280cd96d5a01ebf346c7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_245c64aee1f5c24112b108fff32ae6a9 = $(`<div id="html_245c64aee1f5c24112b108fff32ae6a9" style="width: 100.0%; height: 100.0%;"><b>Parque Residencial Jatobá</b><br>Media: R$ 270,000.00</div>`)[0];
+                popup_27b7f1a34919280cd96d5a01ebf346c7.setContent(html_245c64aee1f5c24112b108fff32ae6a9);
+            
+        
+
+        circle_marker_6e431fdf8938f60e01fa976003310ec9.bindPopup(popup_27b7f1a34919280cd96d5a01ebf346c7)
+        ;
+
+        
+    
+    
+            var circle_marker_169c5fe49ecc3708b04ec8880628b007 = L.circleMarker(
+                [-21.77, -48.2035],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_fe0ae49e984b97d93590b8cc0ff97ef2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3b66299b8bb23b81e37b5cebfe1bf5be = $(`<div id="html_3b66299b8bb23b81e37b5cebfe1bf5be" style="width: 100.0%; height: 100.0%;"><b>Parque Residencial Vale do Sol</b><br>Media: R$ 337,700.00</div>`)[0];
+                popup_fe0ae49e984b97d93590b8cc0ff97ef2.setContent(html_3b66299b8bb23b81e37b5cebfe1bf5be);
+            
+        
+
+        circle_marker_169c5fe49ecc3708b04ec8880628b007.bindPopup(popup_fe0ae49e984b97d93590b8cc0ff97ef2)
+        ;
+
+        
+    
+    
+            var circle_marker_58a42b1d2024f1475dcc3b350cba5718 = L.circleMarker(
+                [-21.7813, -48.1304],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_631f85a209d7369a5037af8ce9f59aa4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f18cb626a37d0a9455d84cbcf8952709 = $(`<div id="html_f18cb626a37d0a9455d84cbcf8952709" style="width: 100.0%; height: 100.0%;"><b>Parque São Paulo (Vila Xavier)</b><br>Media: R$ 235,000.00</div>`)[0];
+                popup_631f85a209d7369a5037af8ce9f59aa4.setContent(html_f18cb626a37d0a9455d84cbcf8952709);
+            
+        
+
+        circle_marker_58a42b1d2024f1475dcc3b350cba5718.bindPopup(popup_631f85a209d7369a5037af8ce9f59aa4)
+        ;
+
+        
+    
+    
+            var circle_marker_9b242d2a291a41dff659bd8b071c04f5 = L.circleMarker(
+                [-21.8053, -48.1284],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_2a9d5cf46f6ac37578ce1b76667d9a6c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5ea439e351576b0b8c30ed7b4e19f4cd = $(`<div id="html_5ea439e351576b0b8c30ed7b4e19f4cd" style="width: 100.0%; height: 100.0%;"><b>Parque das Hortências</b><br>Media: R$ 135,000.00</div>`)[0];
+                popup_2a9d5cf46f6ac37578ce1b76667d9a6c.setContent(html_5ea439e351576b0b8c30ed7b4e19f4cd);
+            
+        
+
+        circle_marker_9b242d2a291a41dff659bd8b071c04f5.bindPopup(popup_2a9d5cf46f6ac37578ce1b76667d9a6c)
+        ;
+
+        
+    
+    
+            var circle_marker_b0ec7af507b3b27bb174d7753e891fa2 = L.circleMarker(
+                [-21.8067, -48.2055],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_5454c635971330b6a528867be11f6df1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0a40e187519a9c5e77a9d5f90e1a2916 = $(`<div id="html_0a40e187519a9c5e77a9d5f90e1a2916" style="width: 100.0%; height: 100.0%;"><b>Quinta do Salto Residence</b><br>Media: R$ 1,070,000.00</div>`)[0];
+                popup_5454c635971330b6a528867be11f6df1.setContent(html_0a40e187519a9c5e77a9d5f90e1a2916);
+            
+        
+
+        circle_marker_b0ec7af507b3b27bb174d7753e891fa2.bindPopup(popup_5454c635971330b6a528867be11f6df1)
+        ;
+
+        
+    
+    
+            var circle_marker_20d93951c286c023714b0349148494ce = L.circleMarker(
+                [-21.79, -48.199],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_9f3b8d043c0e589b6b588326b457295b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_88bbb62425370ea033ca4e9ffff23952 = $(`<div id="html_88bbb62425370ea033ca4e9ffff23952" style="width: 100.0%; height: 100.0%;"><b>Residencial Acapulco</b><br>Media: R$ 350,000.00</div>`)[0];
+                popup_9f3b8d043c0e589b6b588326b457295b.setContent(html_88bbb62425370ea033ca4e9ffff23952);
+            
+        
+
+        circle_marker_20d93951c286c023714b0349148494ce.bindPopup(popup_9f3b8d043c0e589b6b588326b457295b)
+        ;
+
+        
+    
+    
+            var circle_marker_fd936e08b8c858b631e3271943d8c31e = L.circleMarker(
+                [-21.778, -48.1208],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_15e293cbcb6ecb115c4685e490346840 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e9ba13694cde9fb28b9a6c84327522d2 = $(`<div id="html_e9ba13694cde9fb28b9a6c84327522d2" style="width: 100.0%; height: 100.0%;"><b>Residencial Alamedas</b><br>Media: R$ 425,532.00</div>`)[0];
+                popup_15e293cbcb6ecb115c4685e490346840.setContent(html_e9ba13694cde9fb28b9a6c84327522d2);
+            
+        
+
+        circle_marker_fd936e08b8c858b631e3271943d8c31e.bindPopup(popup_15e293cbcb6ecb115c4685e490346840)
+        ;
+
+        
+    
+    
+            var circle_marker_b68aadaf998049b46fb3ead051b518c5 = L.circleMarker(
+                [-21.778, -48.1208],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_98e598f4ccc4d3a4025f539cf73b0b12 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cce129a72101a2dece202bb1a90e8192 = $(`<div id="html_cce129a72101a2dece202bb1a90e8192" style="width: 100.0%; height: 100.0%;"><b>Residencial Alamedas II</b><br>Media: R$ 320,000.00</div>`)[0];
+                popup_98e598f4ccc4d3a4025f539cf73b0b12.setContent(html_cce129a72101a2dece202bb1a90e8192);
+            
+        
+
+        circle_marker_b68aadaf998049b46fb3ead051b518c5.bindPopup(popup_98e598f4ccc4d3a4025f539cf73b0b12)
+        ;
+
+        
+    
+    
+            var circle_marker_9f7f4a65ab67e3f4ff0371fe6150b371 = L.circleMarker(
+                [-21.795, -48.208],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_d79348d519331b2d3f5189fcd4ee0bfb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_651e0f893e333986632991e6fbab6455 = $(`<div id="html_651e0f893e333986632991e6fbab6455" style="width: 100.0%; height: 100.0%;"><b>Residencial Cambuy</b><br>Media: R$ 309,888.24</div>`)[0];
+                popup_d79348d519331b2d3f5189fcd4ee0bfb.setContent(html_651e0f893e333986632991e6fbab6455);
+            
+        
+
+        circle_marker_9f7f4a65ab67e3f4ff0371fe6150b371.bindPopup(popup_d79348d519331b2d3f5189fcd4ee0bfb)
+        ;
+
+        
+    
+    
+            var circle_marker_bc125cdbf1c6b25669235fc08b87d0f2 = L.circleMarker(
+                [-21.74, -48.1342],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_c46c813fbd8d3b4a00eca0fa535f2a30 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_03e38370b58b4e65742775379219d216 = $(`<div id="html_03e38370b58b4e65742775379219d216" style="width: 100.0%; height: 100.0%;"><b>Residencial Monte Carlo</b><br>Media: R$ 320,000.00</div>`)[0];
+                popup_c46c813fbd8d3b4a00eca0fa535f2a30.setContent(html_03e38370b58b4e65742775379219d216);
+            
+        
+
+        circle_marker_bc125cdbf1c6b25669235fc08b87d0f2.bindPopup(popup_c46c813fbd8d3b4a00eca0fa535f2a30)
+        ;
+
+        
+    
+    
+            var circle_marker_203ef9fd5656fa7ebbd0104ae85fe44a = L.circleMarker(
+                [-21.787, -48.204],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_46e568da16fafcb90ae48486033cb263 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_24505868355d3c62b7065645d173e7cb = $(`<div id="html_24505868355d3c62b7065645d173e7cb" style="width: 100.0%; height: 100.0%;"><b>Residencial Quinta das Oliveiras</b><br>Media: R$ 128,162.00</div>`)[0];
+                popup_46e568da16fafcb90ae48486033cb263.setContent(html_24505868355d3c62b7065645d173e7cb);
+            
+        
+
+        circle_marker_203ef9fd5656fa7ebbd0104ae85fe44a.bindPopup(popup_46e568da16fafcb90ae48486033cb263)
+        ;
+
+        
+    
+    
+            var circle_marker_ddcc574ea74de2dcd4d283ed0c2ca9b7 = L.circleMarker(
+                [-21.793, -48.2],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_a8d503cfcce1a5f338001fa238ed272e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_969af629cef4b7ce84551773f98b996a = $(`<div id="html_969af629cef4b7ce84551773f98b996a" style="width: 100.0%; height: 100.0%;"><b>Residencial Ravena</b><br>Media: R$ 540,000.00</div>`)[0];
+                popup_a8d503cfcce1a5f338001fa238ed272e.setContent(html_969af629cef4b7ce84551773f98b996a);
+            
+        
+
+        circle_marker_ddcc574ea74de2dcd4d283ed0c2ca9b7.bindPopup(popup_a8d503cfcce1a5f338001fa238ed272e)
+        ;
+
+        
+    
+    
+            var circle_marker_de783060b4914fff149b44e2dd723600 = L.circleMarker(
+                [-21.7495, -48.1449],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_d60fc3cbea4b730b260af14a2484db99 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d4a0560f32dcf183d82797b90f787dee = $(`<div id="html_d4a0560f32dcf183d82797b90f787dee" style="width: 100.0%; height: 100.0%;"><b>Residencial Santa Luzia</b><br>Media: R$ 353,333.33</div>`)[0];
+                popup_d60fc3cbea4b730b260af14a2484db99.setContent(html_d4a0560f32dcf183d82797b90f787dee);
+            
+        
+
+        circle_marker_de783060b4914fff149b44e2dd723600.bindPopup(popup_d60fc3cbea4b730b260af14a2484db99)
+        ;
+
+        
+    
+    
+            var circle_marker_34797c1bac0b26c778accb977abb5e18 = L.circleMarker(
+                [-21.7787, -48.1922],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_e5c7b8f2eaa95555df075fcf079ec08e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fcb8b6351f7246bd487710369c06b3e7 = $(`<div id="html_fcb8b6351f7246bd487710369c06b3e7" style="width: 100.0%; height: 100.0%;"><b>Solidariedade</b><br>Media: R$ 163,340.00</div>`)[0];
+                popup_e5c7b8f2eaa95555df075fcf079ec08e.setContent(html_fcb8b6351f7246bd487710369c06b3e7);
+            
+        
+
+        circle_marker_34797c1bac0b26c778accb977abb5e18.bindPopup(popup_e5c7b8f2eaa95555df075fcf079ec08e)
+        ;
+
+        
+    
+    
+            var circle_marker_4d7ad10ca992f162eb253409640ef3b3 = L.circleMarker(
+                [-21.7834, -48.178],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_02f143fadd1f5fe4dca1be59173d699a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ea565e4fd8923f3bb3cafd138c821190 = $(`<div id="html_ea565e4fd8923f3bb3cafd138c821190" style="width: 100.0%; height: 100.0%;"><b>São Geraldo</b><br>Media: R$ 488,333.33</div>`)[0];
+                popup_02f143fadd1f5fe4dca1be59173d699a.setContent(html_ea565e4fd8923f3bb3cafd138c821190);
+            
+        
+
+        circle_marker_4d7ad10ca992f162eb253409640ef3b3.bindPopup(popup_02f143fadd1f5fe4dca1be59173d699a)
+        ;
+
+        
+    
+    
+            var circle_marker_ca35968bcd0fc61330c02893a0a6a7b0 = L.circleMarker(
+                [-21.8302, -48.1473],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_55bdef99b3d73c86154cb11b5924cd4d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e1a06b6e9dfb17f64b3d6f23f735669f = $(`<div id="html_e1a06b6e9dfb17f64b3d6f23f735669f" style="width: 100.0%; height: 100.0%;"><b>Vila Aracoara</b><br>Media: R$ 418,333.33</div>`)[0];
+                popup_55bdef99b3d73c86154cb11b5924cd4d.setContent(html_e1a06b6e9dfb17f64b3d6f23f735669f);
+            
+        
+
+        circle_marker_ca35968bcd0fc61330c02893a0a6a7b0.bindPopup(popup_55bdef99b3d73c86154cb11b5924cd4d)
+        ;
+
+        
+    
+    
+            var circle_marker_ebb678d91b6273451d67522606375684 = L.circleMarker(
+                [-21.792, -48.185],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_8868642e6490403f53d3826706c74ef9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ec0128974f5c198ae7f16b1e16f768a8 = $(`<div id="html_ec0128974f5c198ae7f16b1e16f768a8" style="width: 100.0%; height: 100.0%;"><b>Vila Bela Vista</b><br>Media: R$ 275,000.00</div>`)[0];
+                popup_8868642e6490403f53d3826706c74ef9.setContent(html_ec0128974f5c198ae7f16b1e16f768a8);
+            
+        
+
+        circle_marker_ebb678d91b6273451d67522606375684.bindPopup(popup_8868642e6490403f53d3826706c74ef9)
+        ;
+
+        
+    
+    
+            var circle_marker_b66f72251a56ace85dcc29fa3d65d930 = L.circleMarker(
+                [-21.7714, -48.1411],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_bc805d455ec6a7a85dd11eedb60375af = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_01025ff37d0c0cd35ebe3ed637138381 = $(`<div id="html_01025ff37d0c0cd35ebe3ed637138381" style="width: 100.0%; height: 100.0%;"><b>Vila Biagioni (Vila Xavier)</b><br>Media: R$ 335,666.67</div>`)[0];
+                popup_bc805d455ec6a7a85dd11eedb60375af.setContent(html_01025ff37d0c0cd35ebe3ed637138381);
+            
+        
+
+        circle_marker_b66f72251a56ace85dcc29fa3d65d930.bindPopup(popup_bc805d455ec6a7a85dd11eedb60375af)
+        ;
+
+        
+    
+    
+            var circle_marker_890b77f5bf3a77a4ba97a9e8a936c299 = L.circleMarker(
+                [-21.77, -48.155],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_452e3c0dc024d4e66599585199f74dd0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aefccdf7082268a5d798f8c82632d55c = $(`<div id="html_aefccdf7082268a5d798f8c82632d55c" style="width: 100.0%; height: 100.0%;"><b>Vila Cidade Industrial (Vila Xavier)</b><br>Media: R$ 237,660.67</div>`)[0];
+                popup_452e3c0dc024d4e66599585199f74dd0.setContent(html_aefccdf7082268a5d798f8c82632d55c);
+            
+        
+
+        circle_marker_890b77f5bf3a77a4ba97a9e8a936c299.bindPopup(popup_452e3c0dc024d4e66599585199f74dd0)
+        ;
+
+        
+    
+    
+            var circle_marker_a2738cd6ff085671f951b4b4997fba49 = L.circleMarker(
+                [-21.788, -48.172],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_6da74f4a22a5ad2e17f2eebb4725d353 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_444542f31d953db61c792dd98b2279c7 = $(`<div id="html_444542f31d953db61c792dd98b2279c7" style="width: 100.0%; height: 100.0%;"><b>Vila DER</b><br>Media: R$ 545,000.00</div>`)[0];
+                popup_6da74f4a22a5ad2e17f2eebb4725d353.setContent(html_444542f31d953db61c792dd98b2279c7);
+            
+        
+
+        circle_marker_a2738cd6ff085671f951b4b4997fba49.bindPopup(popup_6da74f4a22a5ad2e17f2eebb4725d353)
+        ;
+
+        
+    
+    
+            var circle_marker_cf2897d726e4fd89bc48eee4ff065041 = L.circleMarker(
+                [-21.772, -48.162],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_2406d4b948f1ebd195d5f815d1118b17 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d87de1d819dd1e092c78bcd898ac5804 = $(`<div id="html_d87de1d819dd1e092c78bcd898ac5804" style="width: 100.0%; height: 100.0%;"><b>Vila Esperança (Vila Xavier)</b><br>Media: R$ 288,833.33</div>`)[0];
+                popup_2406d4b948f1ebd195d5f815d1118b17.setContent(html_d87de1d819dd1e092c78bcd898ac5804);
+            
+        
+
+        circle_marker_cf2897d726e4fd89bc48eee4ff065041.bindPopup(popup_2406d4b948f1ebd195d5f815d1118b17)
+        ;
+
+        
+    
+    
+            var circle_marker_68134a319d0fcc85c8c4322d3ae00e39 = L.circleMarker(
+                [-21.7767, -48.1715],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_19a18b9892e51fa31f4001caff51f87d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bbd73e8717541b96a46773b1b1362aeb = $(`<div id="html_bbd73e8717541b96a46773b1b1362aeb" style="width: 100.0%; height: 100.0%;"><b>Vila Ferroviária</b><br>Media: R$ 449,000.00</div>`)[0];
+                popup_19a18b9892e51fa31f4001caff51f87d.setContent(html_bbd73e8717541b96a46773b1b1362aeb);
+            
+        
+
+        circle_marker_68134a319d0fcc85c8c4322d3ae00e39.bindPopup(popup_19a18b9892e51fa31f4001caff51f87d)
+        ;
+
+        
+    
+    
+            var circle_marker_0b814352d6440a7c5953934ba7a4454c = L.circleMarker(
+                [-21.795, -48.19],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_39c3b7914a0254e48219da7347ac69bd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_221185a4f1ee77a50ef4430546360f26 = $(`<div id="html_221185a4f1ee77a50ef4430546360f26" style="width: 100.0%; height: 100.0%;"><b>Vila Furlan</b><br>Media: R$ 319,200.00</div>`)[0];
+                popup_39c3b7914a0254e48219da7347ac69bd.setContent(html_221185a4f1ee77a50ef4430546360f26);
+            
+        
+
+        circle_marker_0b814352d6440a7c5953934ba7a4454c.bindPopup(popup_39c3b7914a0254e48219da7347ac69bd)
+        ;
+
+        
+    
+    
+            var circle_marker_e2e43be6220e234db49115e1933b66d1 = L.circleMarker(
+                [-21.7668, -48.1736],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_b5557dc21eb196fa894599821f2e3f6b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8c37107ed15dbbda16fdc0fa2022ebf7 = $(`<div id="html_8c37107ed15dbbda16fdc0fa2022ebf7" style="width: 100.0%; height: 100.0%;"><b>Vila Harmonia</b><br>Media: R$ 465,604.74</div>`)[0];
+                popup_b5557dc21eb196fa894599821f2e3f6b.setContent(html_8c37107ed15dbbda16fdc0fa2022ebf7);
+            
+        
+
+        circle_marker_e2e43be6220e234db49115e1933b66d1.bindPopup(popup_b5557dc21eb196fa894599821f2e3f6b)
+        ;
+
+        
+    
+    
+            var circle_marker_63f6fa6296fe2a3ed2da2cc11286e7c6 = L.circleMarker(
+                [-21.785, -48.162],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_91c718a1f659c298c343701741ba6423 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4a0452f1f4efc8ea368f31f4e26be656 = $(`<div id="html_4a0452f1f4efc8ea368f31f4e26be656" style="width: 100.0%; height: 100.0%;"><b>Vila Independência</b><br>Media: R$ 470,000.00</div>`)[0];
+                popup_91c718a1f659c298c343701741ba6423.setContent(html_4a0452f1f4efc8ea368f31f4e26be656);
+            
+        
+
+        circle_marker_63f6fa6296fe2a3ed2da2cc11286e7c6.bindPopup(popup_91c718a1f659c298c343701741ba6423)
+        ;
+
+        
+    
+    
+            var circle_marker_b10f8e20322a1a156931bd4d88827522 = L.circleMarker(
+                [-21.7895, -48.1789],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_8b483ed8b90a3edfb3b55a3695470d35 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_422733d42a08e43e9a0f466b582f735e = $(`<div id="html_422733d42a08e43e9a0f466b582f735e" style="width: 100.0%; height: 100.0%;"><b>Vila José Bonifácio</b><br>Media: R$ 473,333.33</div>`)[0];
+                popup_8b483ed8b90a3edfb3b55a3695470d35.setContent(html_422733d42a08e43e9a0f466b582f735e);
+            
+        
+
+        circle_marker_b10f8e20322a1a156931bd4d88827522.bindPopup(popup_8b483ed8b90a3edfb3b55a3695470d35)
+        ;
+
+        
+    
+    
+            var circle_marker_03d0f268d221f71b16eeac06a0c15f01 = L.circleMarker(
+                [-21.8059, -48.1673],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_2f772394608b94bd92a4e9a52c44f49d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_99d58f96f1e8113358221f3e543ea605 = $(`<div id="html_99d58f96f1e8113358221f3e543ea605" style="width: 100.0%; height: 100.0%;"><b>Vila Melhado</b><br>Media: R$ 387,722.22</div>`)[0];
+                popup_2f772394608b94bd92a4e9a52c44f49d.setContent(html_99d58f96f1e8113358221f3e543ea605);
+            
+        
+
+        circle_marker_03d0f268d221f71b16eeac06a0c15f01.bindPopup(popup_2f772394608b94bd92a4e9a52c44f49d)
+        ;
+
+        
+    
+    
+            var circle_marker_3d429c32d6e1602a955a292919e956e8 = L.circleMarker(
+                [-21.8017, -48.1261],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_e3fc86179a418b9ed3f989d6f049bf66 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5a87449251a9420e832e6bf0f1a04cae = $(`<div id="html_5a87449251a9420e832e6bf0f1a04cae" style="width: 100.0%; height: 100.0%;"><b>Vila Nossa Senhora Aparecida</b><br>Media: R$ 150,000.00</div>`)[0];
+                popup_e3fc86179a418b9ed3f989d6f049bf66.setContent(html_5a87449251a9420e832e6bf0f1a04cae);
+            
+        
+
+        circle_marker_3d429c32d6e1602a955a292919e956e8.bindPopup(popup_e3fc86179a418b9ed3f989d6f049bf66)
+        ;
+
+        
+    
+    
+            var circle_marker_1a3d9765980252a5dd2faed1aa162ee6 = L.circleMarker(
+                [-21.798, -48.182],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_90ef98f4ec07b7a2cc6fbf52887b6e08 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_01f6bf611b3ab4412e3f42edcdd161aa = $(`<div id="html_01f6bf611b3ab4412e3f42edcdd161aa" style="width: 100.0%; height: 100.0%;"><b>Vila Nossa Senhora do Carmo</b><br>Media: R$ 450,000.00</div>`)[0];
+                popup_90ef98f4ec07b7a2cc6fbf52887b6e08.setContent(html_01f6bf611b3ab4412e3f42edcdd161aa);
+            
+        
+
+        circle_marker_1a3d9765980252a5dd2faed1aa162ee6.bindPopup(popup_90ef98f4ec07b7a2cc6fbf52887b6e08)
+        ;
+
+        
+    
+    
+            var circle_marker_9bd461f672d41ff5883f334f205102ad = L.circleMarker(
+                [-21.8, -48.165],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_8742c67014ec6c30bb61df57ec56be52 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_858e33a8f37ea5f242091f01b2c00acb = $(`<div id="html_858e33a8f37ea5f242091f01b2c00acb" style="width: 100.0%; height: 100.0%;"><b>Vila Progresso</b><br>Media: R$ 244,999.50</div>`)[0];
+                popup_8742c67014ec6c30bb61df57ec56be52.setContent(html_858e33a8f37ea5f242091f01b2c00acb);
+            
+        
+
+        circle_marker_9bd461f672d41ff5883f334f205102ad.bindPopup(popup_8742c67014ec6c30bb61df57ec56be52)
+        ;
+
+        
+    
+    
+            var circle_marker_c8c96cedf2e4899a96959e8208d6d063 = L.circleMarker(
+                [-21.769, -48.159],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_a8db24b3126f847e7d27be0f1b319b44 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9f87f78c3a550089227a10d5948ce87f = $(`<div id="html_9f87f78c3a550089227a10d5948ce87f" style="width: 100.0%; height: 100.0%;"><b>Vila Renata (Vila Xavier)</b><br>Media: R$ 158,000.00</div>`)[0];
+                popup_a8db24b3126f847e7d27be0f1b319b44.setContent(html_9f87f78c3a550089227a10d5948ce87f);
+            
+        
+
+        circle_marker_c8c96cedf2e4899a96959e8208d6d063.bindPopup(popup_a8db24b3126f847e7d27be0f1b319b44)
+        ;
+
+        
+    
+    
+            var circle_marker_a367a3576a399f7f5bcb59ca059ac3a8 = L.circleMarker(
+                [-21.776, -48.162],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_2d7261d68bd84e3f3fe8cc131a18adba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9dc6c0549579e22254633bdf51116144 = $(`<div id="html_9dc6c0549579e22254633bdf51116144" style="width: 100.0%; height: 100.0%;"><b>Vila Santa Maria (Vila Xavier)</b><br>Media: R$ 305,000.00</div>`)[0];
+                popup_2d7261d68bd84e3f3fe8cc131a18adba.setContent(html_9dc6c0549579e22254633bdf51116144);
+            
+        
+
+        circle_marker_a367a3576a399f7f5bcb59ca059ac3a8.bindPopup(popup_2d7261d68bd84e3f3fe8cc131a18adba)
+        ;
+
+        
+    
+    
+            var circle_marker_d6b66f1147ea878d3986fab5537fd36a = L.circleMarker(
+                [-21.7888, -48.1905],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_85bc03857d4fde6de5874deaf57a5de2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e368f43efadfea09fb97515f50204422 = $(`<div id="html_e368f43efadfea09fb97515f50204422" style="width: 100.0%; height: 100.0%;"><b>Vila Santana</b><br>Media: R$ 368,333.33</div>`)[0];
+                popup_85bc03857d4fde6de5874deaf57a5de2.setContent(html_e368f43efadfea09fb97515f50204422);
+            
+        
+
+        circle_marker_d6b66f1147ea878d3986fab5537fd36a.bindPopup(popup_85bc03857d4fde6de5874deaf57a5de2)
+        ;
+
+        
+    
+    
+            var circle_marker_ceef7765c50d6bc6548308161514d59d = L.circleMarker(
+                [-21.792, -48.176],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_ed787d2dbf73804c5b6a3df190753b90 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9272c149bb99b1c583c46684ec785437 = $(`<div id="html_9272c149bb99b1c583c46684ec785437" style="width: 100.0%; height: 100.0%;"><b>Vila Sedenho</b><br>Media: R$ 372,688.89</div>`)[0];
+                popup_ed787d2dbf73804c5b6a3df190753b90.setContent(html_9272c149bb99b1c583c46684ec785437);
+            
+        
+
+        circle_marker_ceef7765c50d6bc6548308161514d59d.bindPopup(popup_ed787d2dbf73804c5b6a3df190753b90)
+        ;
+
+        
+    
+    
+            var circle_marker_a3988ee8324a44d4008695ced3cafda9 = L.circleMarker(
+                [-21.778, -48.195],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_fb8b32ec82cf6c51eadbc9ab508aa4e8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_757f27730c8fa9834df2572fbdcdacf4 = $(`<div id="html_757f27730c8fa9834df2572fbdcdacf4" style="width: 100.0%; height: 100.0%;"><b>Vila Suconasa</b><br>Media: R$ 310,142.86</div>`)[0];
+                popup_fb8b32ec82cf6c51eadbc9ab508aa4e8.setContent(html_757f27730c8fa9834df2572fbdcdacf4);
+            
+        
+
+        circle_marker_a3988ee8324a44d4008695ced3cafda9.bindPopup(popup_fb8b32ec82cf6c51eadbc9ab508aa4e8)
+        ;
+
+        
+    
+    
+            var circle_marker_91e30012276c7c3ce08ae0f3f891e313 = L.circleMarker(
+                [-21.77, -48.157],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_8dcfa339cbd68a7c4ed09ff665379b2b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8a8f50f908ced7eb505202950f892303 = $(`<div id="html_8a8f50f908ced7eb505202950f892303" style="width: 100.0%; height: 100.0%;"><b>Vila Tito de Carvalho (Vila Xavier)</b><br>Media: R$ 432,500.00</div>`)[0];
+                popup_8dcfa339cbd68a7c4ed09ff665379b2b.setContent(html_8a8f50f908ced7eb505202950f892303);
+            
+        
+
+        circle_marker_91e30012276c7c3ce08ae0f3f891e313.bindPopup(popup_8dcfa339cbd68a7c4ed09ff665379b2b)
+        ;
+
+        
+    
+    
+            var circle_marker_a6bba460fa469d045bbd905f07fdd387 = L.circleMarker(
+                [-21.7677, -48.1675],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_24d1ac21e79d892e558ce1f71b085632 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7c5cb236e44927104d036919de9bf89a = $(`<div id="html_7c5cb236e44927104d036919de9bf89a" style="width: 100.0%; height: 100.0%;"><b>Vila Velosa</b><br>Media: R$ 344,166.67</div>`)[0];
+                popup_24d1ac21e79d892e558ce1f71b085632.setContent(html_7c5cb236e44927104d036919de9bf89a);
+            
+        
+
+        circle_marker_a6bba460fa469d045bbd905f07fdd387.bindPopup(popup_24d1ac21e79d892e558ce1f71b085632)
+        ;
+
+        
+    
+    
+            var circle_marker_988886cfb5b7ae9b5d7caf4e52b12fa5 = L.circleMarker(
+                [-21.768, -48.16],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_dfa965a3bc3603e9cad509a99979aa0d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a351ea46654031f8b72d3a50833ed119 = $(`<div id="html_a351ea46654031f8b72d3a50833ed119" style="width: 100.0%; height: 100.0%;"><b>Vila Vieira (Vila Xavier)</b><br>Media: R$ 431,666.67</div>`)[0];
+                popup_dfa965a3bc3603e9cad509a99979aa0d.setContent(html_a351ea46654031f8b72d3a50833ed119);
+            
+        
+
+        circle_marker_988886cfb5b7ae9b5d7caf4e52b12fa5.bindPopup(popup_dfa965a3bc3603e9cad509a99979aa0d)
+        ;
+
+        
+    
+    
+            var circle_marker_46e34a2748fbb497c7dd78a3a7de5cd6 = L.circleMarker(
+                [-21.765, -48.165],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_6e48d33e4389d9c86282962abba70f20 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_db2a3255d9b32c5b61c602d640f92210 = $(`<div id="html_db2a3255d9b32c5b61c602d640f92210" style="width: 100.0%; height: 100.0%;"><b>Vila Xavier (Vila Xavier)</b><br>Media: R$ 331,038.46</div>`)[0];
+                popup_6e48d33e4389d9c86282962abba70f20.setContent(html_db2a3255d9b32c5b61c602d640f92210);
+            
+        
+
+        circle_marker_46e34a2748fbb497c7dd78a3a7de5cd6.bindPopup(popup_6e48d33e4389d9c86282962abba70f20)
+        ;
+
+        
+    
+    
+            var circle_marker_d702e4649660cf4f366b16c8fb478a53 = L.circleMarker(
+                [-21.785, -48.169],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_e7d9d9d7bc56e50f900eb4cfc3aa3b6f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_51ece3e2395f35053997836700e7f0bf = $(`<div id="html_51ece3e2395f35053997836700e7f0bf" style="width: 100.0%; height: 100.0%;"><b>Vila Yamada</b><br>Media: R$ 560,714.29</div>`)[0];
+                popup_e7d9d9d7bc56e50f900eb4cfc3aa3b6f.setContent(html_51ece3e2395f35053997836700e7f0bf);
+            
+        
+
+        circle_marker_d702e4649660cf4f366b16c8fb478a53.bindPopup(popup_e7d9d9d7bc56e50f900eb4cfc3aa3b6f)
+        ;
+
+        
+    
+    
+            var circle_marker_e0d4e8a6348583cc48b29d3ee748910d = L.circleMarker(
+                [-21.792, -48.206],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_eea923f53641a33353c865cd53cfbf61);
+        
+    
+        var popup_bf3812fa7c1f7c6220bc94054abc942f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e2304b57865a90540fb99436159d87b7 = $(`<div id="html_e2304b57865a90540fb99436159d87b7" style="width: 100.0%; height: 100.0%;"><b>Villa Dei Fiori Residencial</b><br>Media: R$ 800,000.00</div>`)[0];
+                popup_bf3812fa7c1f7c6220bc94054abc942f.setContent(html_e2304b57865a90540fb99436159d87b7);
+            
+        
+
+        circle_marker_e0d4e8a6348583cc48b29d3ee748910d.bindPopup(popup_bf3812fa7c1f7c6220bc94054abc942f)
+        ;
+
+        
+    
+</script>
+</html>
